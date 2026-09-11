@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snapbox - Photobooth for Every Moment</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif; }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+  :root { --header-h: 80px; }
+  .photo-tile { transition: transform .35s ease, box-shadow .35s ease, z-index 0s; cursor: pointer; }
+  .photo-tile:hover { transform: scale(1.14) rotate(0deg) !important; box-shadow: 0 20px 40px -12px rgba(0,0,0,0.35); z-index: 30; }
+  .photo-tile .tile-overlay { opacity: 0; transition: opacity .25s ease; }
+  .photo-tile:hover .tile-overlay { opacity: 1; }
+</style>
+</head>
+<body class="bg-white min-h-screen">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white border-b border-gray-100">
+  <nav class="flex items-center justify-between px-6 sm:px-10" style="height:var(--header-h)">
+    <div class="flex items-center gap-2">
+      <div class="w-9 h-9 rounded-full bg-[#6C4EF5] flex items-center justify-center text-white text-base">📷</div>
+      <span class="text-lg font-semibold text-[#3a3550]">Snapbox</span>
+    </div>
+
+    <div class="hidden md:flex items-center gap-8 text-[15px] text-[#4a4560] font-medium">
+      <a href="#" class="hover:text-[#6C4EF5] transition">Home</a>
+      <a href="#" class="hover:text-[#6C4EF5] transition">Gallery</a>
+      <a href="#" class="hover:text-[#6C4EF5] transition">Packages</a>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <button class="bg-[#6C4EF5] text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#5b3fe0] transition whitespace-nowrap">Book Now</button>
+      <button class="border-2 border-[#6C4EF5] text-[#6C4EF5] text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#6C4EF5]/5 transition">Login</button>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="w-full bg-white px-6 sm:px-10 py-6 relative overflow-hidden flex items-center" style="min-height:calc(100vh - var(--header-h))">
+
+  <!-- decorative faint swirl lines (background) -->
+  <svg class="absolute left-0 top-0 h-full w-1/2 text-[#efeef8] pointer-events-none" viewBox="0 0 400 600" fill="none">
+    <path d="M-20 500 C 80 450, 60 350, 150 320 S 250 250, 200 150 S 100 50, 180 -20" stroke="currentColor" stroke-width="2"/>
+  </svg>
+  <svg class="absolute right-0 top-0 h-full w-1/2 text-[#efeef8] pointer-events-none" viewBox="0 0 400 600" fill="none">
+    <path d="M420 40 C 320 90, 340 190, 250 220 S 150 290, 200 390 S 300 490, 220 560" stroke="currentColor" stroke-width="2"/>
+  </svg>
+
+  <!-- MAIN -->
+  <div class="relative z-10 grid lg:grid-cols-2 gap-10 items-center w-full">
+
+    <!-- LEFT -->
+    <div class="max-w-md">
+      <h1 class="text-5xl sm:text-6xl font-extrabold text-[#211f2e] leading-[1.05] tracking-tight">
+        Smile <span class="inline-block align-middle text-4xl">📸</span>
+        <br>Without a
+        <br>Glitch <span class="inline-block align-middle text-4xl">✨</span>
+      </h1>
+
+      <p class="mt-6 text-[#8b87a0] text-[15px] leading-relaxed max-w-sm">
+        Every party deserves a booth. Instant prints, endless props, unforgettable moments.
+      </p>
+
+      <div class="mt-8 flex items-center gap-2 bg-white border border-gray-200 rounded-full p-1.5 pl-5 shadow-sm max-w-md">
+        <input type="text" placeholder="Enter your event date"
+          class="flex-1 min-w-0 text-sm text-[#4a4560] placeholder-gray-400 outline-none bg-transparent">
+        <button class="flex items-center gap-2 bg-[#6C4EF5] text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#5b3fe0] transition whitespace-nowrap">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M4 5a2 2 0 00-2 2v7a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.17l-.83-1.5A1 1 0 0013.13 3H6.87a1 1 0 00-.87.5L5.17 5H4zm6 3a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/></svg>
+          Book a Booth
+        </button>
+      </div>
+    </div>
+
+    <!-- RIGHT: scattered photo collage -->
+    <div class="relative h-[440px] sm:h-[500px] w-full max-w-[480px] mx-auto">
+
+      <div class="photo-tile absolute top-[2%] left-[8%] w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-[#c8b8f5] ring-4 ring-white shadow-lg rotate-[-8deg] bg-[url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=200&h=200&fit=crop&crop=faces')] bg-cover bg-center">
+        <div class="tile-overlay absolute inset-0 rounded-xl bg-black/30 flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M9 3a1 1 0 011 1v4h4a1 1 0 110 2h-4v4a1 1 0 11-2 0v-4H4a1 1 0 110-2h4V4a1 1 0 011-1z" opacity="0"/><path d="M8 4a2 2 0 00-1.789 1.106L5.618 6H4a2 2 0 00-2 2v7a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-1.618l-.593-1.894A2 2 0 0012 3H8zm2 4a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/></svg>
+        </div>
+      </div>
+
+      <div class="photo-tile absolute top-[0%] left-[42%] w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-[#f5d9b8] ring-4 ring-white shadow-lg rotate-[6deg] bg-[url('https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=180&h=180&fit=crop&crop=faces')] bg-cover bg-center">
+        <div class="tile-overlay absolute inset-0 rounded-xl bg-black/30 flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M8 4a2 2 0 00-1.789 1.106L5.618 6H4a2 2 0 00-2 2v7a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-1.618l-.593-1.894A2 2 0 0012 3H8zm2 4a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/></svg>
+        </div>
+      </div>
+
+      <div class="photo-tile absolute top-[6%] right-[2%] w-28 h-32 sm:w-32 sm:h-36 rounded-2xl bg-[#f5d9b8] ring-4 ring-white shadow-lg rotate-[10deg] bg-[url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=220&h=260&fit=crop&crop=faces')] bg-cover bg-center">
+        <div class="tile-overlay absolute inset-0 rounded-xl bg-black/30 flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M8 4a2 2 0 00-1.789 1.106L5.618 6H4a2 2 0 00-2 2v7a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-1.618l-.593-1.894A2 2 0 0012 3H8zm2 4a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/></svg>
+        </div>
+      </div>
+
+      <div class="photo-tile absolute top-[30%] left-[0%] w-24 h-28 sm:w-28 sm:h-32 rounded-2xl bg-[#b8d6f5] ring-4 ring-white shadow-lg rotate-[5deg] bg-[url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=200&h=240&fit=crop&crop=faces')] bg-cover bg-center">
+        <div class="tile-overlay absolute inset-0 rounded-xl bg-black/30 flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M8 4a2 2 0 00-1.789 1.106L5.618 6H4a2 2 0 00-2 2v7a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-1.618l-.593-1.894A2 2 0 0012 3H8zm2 4a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/></svg>
+        </div>
+      </div>
+
+      <div class="photo-tile absolute top-[36%] left-[36%] w-28 h-28 sm:w-32 sm:h-32 rounded-2xl bg-[#c8b8f5] ring-4 ring-white shadow-lg rotate-[-4deg] bg-[url('https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=220&h=220&fit=crop&crop=faces')] bg-cover bg-center">
+        <div class="tile-overlay absolute inset-0 rounded-xl bg-black/30 flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M8 4a2 2 0 00-1.789 1.106L5.618 6H4a2 2 0 00-2 2v7a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-1.618l-.593-1.894A2 2 0 0012 3H8zm2 4a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/></svg>
+        </div>
+      </div>
+
+      <div class="photo-tile absolute top-[28%] right-[4%] w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-[#b8d6f5] ring-4 ring-white shadow-lg rotate-[-10deg] bg-[url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=180&h=180&fit=crop&crop=faces')] bg-cover bg-center">
+        <div class="tile-overlay absolute inset-0 rounded-xl bg-black/30 flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M8 4a2 2 0 00-1.789 1.106L5.618 6H4a2 2 0 00-2 2v7a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-1.618l-.593-1.894A2 2 0 0012 3H8zm2 4a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/></svg>
+        </div>
+      </div>
+
+      <div class="photo-tile absolute bottom-[10%] left-[10%] w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-[#f5d9b8] ring-4 ring-white shadow-lg rotate-[9deg] bg-[url('https://images.unsplash.com/photo-1496024840928-4c417adf211d?w=200&h=200&fit=crop&crop=faces')] bg-cover bg-center">
+        <div class="tile-overlay absolute inset-0 rounded-xl bg-black/30 flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M8 4a2 2 0 00-1.789 1.106L5.618 6H4a2 2 0 00-2 2v7a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-1.618l-.593-1.894A2 2 0 0012 3H8zm2 4a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/></svg>
+        </div>
+      </div>
+
+      <div class="photo-tile absolute bottom-[4%] left-[42%] w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-[#c8b8f5] ring-4 ring-white shadow-lg rotate-[-6deg] bg-[url('https://images.unsplash.com/photo-1543269865-cbf427effbad?w=180&h=180&fit=crop&crop=faces')] bg-cover bg-center">
+        <div class="tile-overlay absolute inset-0 rounded-xl bg-black/30 flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M8 4a2 2 0 00-1.789 1.106L5.618 6H4a2 2 0 00-2 2v7a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-1.618l-.593-1.894A2 2 0 0012 3H8zm2 4a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/></svg>
+        </div>
+      </div>
+
+      <div class="photo-tile absolute bottom-[8%] right-[6%] w-28 h-28 sm:w-32 sm:h-32 rounded-2xl bg-[#b8d6f5] ring-4 ring-white shadow-lg rotate-[4deg] bg-[url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=220&h=220&fit=crop&crop=faces')] bg-cover bg-center">
+        <div class="tile-overlay absolute inset-0 rounded-xl bg-black/30 flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M8 4a2 2 0 00-1.789 1.106L5.618 6H4a2 2 0 00-2 2v7a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-1.618l-.593-1.894A2 2 0 0012 3H8zm2 4a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/></svg>
+        </div>
+      </div>
+
+      <!-- floating icon bubbles -->
+      <div class="absolute top-[16%] left-[36%] w-9 h-9 rounded-full bg-[#1c1c22] text-white flex items-center justify-center text-sm shadow-lg z-10">⚡</div>
+      <div class="absolute top-[46%] left-[16%] w-8 h-8 rounded-full bg-[#1c1c22] text-white flex items-center justify-center text-xs shadow-lg z-10">😎</div>
+      <div class="absolute top-[26%] left-[62%] w-9 h-9 rounded-full bg-[#1c1c22] text-white flex items-center justify-center text-sm shadow-lg z-10">🎉</div>
+      <div class="absolute bottom-[30%] right-[24%] w-9 h-9 rounded-full bg-[#1c1c22] text-white flex items-center justify-center text-sm shadow-lg z-10">❤️</div>
+      <div class="absolute bottom-[16%] left-[34%] w-9 h-9 rounded-full bg-[#1c1c22] text-white flex items-center justify-center text-sm shadow-lg z-10">📷</div>
+      <div class="absolute top-[54%] right-[2%] w-8 h-8 rounded-full bg-[#1c1c22] text-white flex items-center justify-center text-xs shadow-lg z-10">⭐</div>
+
+      <!-- speech bubbles -->
+      <div class="absolute top-[2%] right-[24%] bg-[#1c1c22] text-white text-xs font-semibold px-3 py-1.5 rounded-full rounded-bl-sm shadow-lg -rotate-6 z-10">Cheese! 🧀</div>
+      <div class="absolute bottom-[0%] right-[36%] bg-[#1c1c22] text-white text-xs font-semibold px-3 py-1.5 rounded-full rounded-br-sm shadow-lg rotate-6 z-10">Yay! 🎊</div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
