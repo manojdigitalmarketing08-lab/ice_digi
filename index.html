@@ -26,6 +26,9 @@
   details > summary::-webkit-details-marker { display: none; }
   details[open] .faq-icon { transform: rotate(45deg); }
 
+  .config-chip { transition: transform .3s ease, box-shadow .3s ease; }
+  .config-chip:hover { transform: translateY(-5px) rotate(0deg) scale(1.04) !important; box-shadow: 0 18px 34px -14px rgba(0,0,0,0.25); z-index: 10; }
+
   /* Trust strip: photo-strip perforation + running marquee */
   .trust-strip { position: relative; }
   .trust-strip::before, .trust-strip::after {
@@ -419,58 +422,67 @@
         </h2>
         <p class="mt-3 text-[15px] text-[#8b87a0]">Build a booth around your event or business, piece by piece.</p>
 
-        <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-3">
-          <div class="rounded-2xl border-2 border-[#6C4EF5] bg-[#6C4EF5] text-white px-4 py-3">
+        <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div class="config-chip rounded-2xl ring-4 ring-white shadow-md bg-[#6C4EF5] text-white px-4 py-3 rotate-[-1deg]">
             <span class="block text-sm font-semibold">Machine model</span>
             <span class="block text-xs mt-1 opacity-90">Choose the base unit for your capture style.</span>
           </div>
-          <div class="rounded-2xl border border-gray-200 px-4 py-3">
+          <div class="config-chip rounded-2xl ring-4 ring-white shadow-md bg-white px-4 py-3 rotate-[1deg]">
             <span class="block text-sm font-semibold text-[#3a3550]">Booth size</span>
             <span class="block text-xs mt-1 text-[#8b87a0]">From compact kiosks to full enclosed booths.</span>
           </div>
-          <div class="rounded-2xl border border-gray-200 px-4 py-3">
+          <div class="config-chip rounded-2xl ring-4 ring-white shadow-md bg-white px-4 py-3 rotate-[-2deg]">
             <span class="block text-sm font-semibold text-[#3a3550]">Screen</span>
             <span class="block text-xs mt-1 text-[#8b87a0]">Touchscreen size and orientation for your flow.</span>
           </div>
-          <div class="rounded-2xl border border-gray-200 px-4 py-3">
+          <div class="config-chip rounded-2xl ring-4 ring-white shadow-md bg-white px-4 py-3 rotate-[1deg]">
             <span class="block text-sm font-semibold text-[#3a3550]">Finish</span>
             <span class="block text-xs mt-1 text-[#8b87a0]">Panel colors and materials to match your brand.</span>
           </div>
-          <div class="rounded-2xl border border-gray-200 px-4 py-3">
+          <div class="config-chip rounded-2xl ring-4 ring-white shadow-md bg-white px-4 py-3 rotate-[-1deg]">
             <span class="block text-sm font-semibold text-[#3a3550]">Branding</span>
             <span class="block text-xs mt-1 text-[#8b87a0]">Custom overlays, logos, and print templates.</span>
           </div>
-          <div class="rounded-2xl border border-gray-200 px-4 py-3">
+          <div class="config-chip rounded-2xl ring-4 ring-white shadow-md bg-white px-4 py-3 rotate-[2deg]">
             <span class="block text-sm font-semibold text-[#3a3550]">Camera</span>
             <span class="block text-xs mt-1 text-[#8b87a0]">DSLR, mirrorless, or built-in capture options.</span>
           </div>
-          <div class="rounded-2xl border border-gray-200 px-4 py-3">
+          <div class="config-chip rounded-2xl ring-4 ring-white shadow-md bg-white px-4 py-3 rotate-[1deg]">
             <span class="block text-sm font-semibold text-[#3a3550]">Computer</span>
             <span class="block text-xs mt-1 text-[#8b87a0]">Processing power for filters, AI, and speed.</span>
           </div>
-          <div class="rounded-2xl border border-gray-200 px-4 py-3">
+          <div class="config-chip rounded-2xl ring-4 ring-white shadow-md bg-white px-4 py-3 rotate-[-1deg]">
             <span class="block text-sm font-semibold text-[#3a3550]">Printer</span>
             <span class="block text-xs mt-1 text-[#8b87a0]">Instant dye-sub or strip-style printing.</span>
           </div>
-          <div class="rounded-2xl border border-gray-200 px-4 py-3">
+          <div class="config-chip rounded-2xl ring-4 ring-white shadow-md bg-white px-4 py-3 rotate-[2deg]">
             <span class="block text-sm font-semibold text-[#3a3550]">Lighting</span>
             <span class="block text-xs mt-1 text-[#8b87a0]">Ring lights and flash tuned for skin tones.</span>
           </div>
-          <div class="rounded-2xl border border-gray-200 px-4 py-3">
+          <div class="config-chip rounded-2xl ring-4 ring-white shadow-md bg-white px-4 py-3 rotate-[-2deg]">
             <span class="block text-sm font-semibold text-[#3a3550]">Connectivity</span>
             <span class="block text-xs mt-1 text-[#8b87a0]">Wi-Fi, cloud gallery, and social sharing.</span>
           </div>
-          <div class="rounded-2xl border border-gray-200 px-4 py-3">
+          <div class="config-chip rounded-2xl ring-4 ring-white shadow-md bg-white px-4 py-3 rotate-[1deg]">
             <span class="block text-sm font-semibold text-[#3a3550]">Accessories</span>
             <span class="block text-xs mt-1 text-[#8b87a0]">Props, backdrops, and guestbook add-ons.</span>
           </div>
-          <div class="rounded-2xl border border-gray-200 px-4 py-3">
+          <div class="config-chip rounded-2xl ring-4 ring-white shadow-md bg-white px-4 py-3 rotate-[-1deg]">
             <span class="block text-sm font-semibold text-[#3a3550]">Power</span>
             <span class="block text-xs mt-1 text-[#8b87a0]">Battery or mains setup for any venue.</span>
           </div>
-          <div class="rounded-2xl border border-gray-200 px-4 py-3">
-            <span class="block text-sm font-semibold text-[#3a3550]">Support</span>
-            <span class="block text-xs mt-1 text-[#8b87a0]">Setup help and on-call assistance on event day.</span>
+        </div>
+
+        <!-- Support: hangs off the configurator like a print clipped to a line -->
+        <div class="mt-10 relative pt-6">
+          <div class="border-t-2 border-dashed border-[#6C4EF5]/30"></div>
+          <div class="flex justify-center">
+            <div class="config-chip relative mt-3 rounded-2xl ring-4 ring-white shadow-lg bg-white px-5 py-4 max-w-[220px] rotate-[-3deg]">
+              <span class="absolute -top-[27px] left-1/2 -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-[#6C4EF5] ring-2 ring-white shadow"></span>
+              <span class="absolute -top-[19px] left-1/2 -translate-x-1/2 w-0.5 h-4 bg-[#6C4EF5]/40"></span>
+              <span class="block text-sm font-semibold text-[#3a3550]">Support</span>
+              <span class="block text-xs mt-1 text-[#8b87a0]">Setup help and on-call assistance on event day.</span>
+            </div>
           </div>
         </div>
       </div>
