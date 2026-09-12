@@ -3,82 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Snapbox — Photo Booths to Rent, Buy, or Power Your Next Experience</title>
-<meta name="description" content="Rent a photo booth for your event, buy your own booth hardware to start a business, or power the booth you already own with Snapbox software.">
+<title>IceDigitec — Photo Booths to Rent, Buy, or Power Your Next Experience</title>
+<meta name="description" content="Rent a photo booth for your event, buy your own booth hardware to start a business, or power the booth you already own with IceDigitec software.">
 <script src="https://cdn.tailwindcss.com"></script>
-<style>
-  body { font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif; }
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap');
-  :root { --header-h: 80px; }
-
-  .polaroid { background: #fff; padding: 10px 10px 8px; border-radius: 6px; }
-  .polaroid-caption { font-family: 'Caveat', cursive; font-size: 1.25rem; line-height: 1; color: #3a3550; }
-
-  .photo-tile { transition: transform .35s ease, box-shadow .35s ease; cursor: pointer; }
-  .photo-tile:hover { transform: scale(1.14) rotate(0deg) !important; box-shadow: 0 20px 40px -12px rgba(0,0,0,0.35); z-index: 30; }
-  .photo-tile .tile-overlay { opacity: 0; transition: opacity .25s ease; }
-  .photo-tile:hover .tile-overlay { opacity: 1; }
-
-  .choice-card { transition: transform .3s ease, box-shadow .3s ease; }
-  .choice-card:hover { transform: translateY(-6px); box-shadow: 0 24px 48px -16px rgba(0,0,0,0.25); }
-
-  .gallery-card { transition: transform .3s ease; }
-  .gallery-card:hover { transform: rotate(0deg) scale(1.03) !important; }
-
-  details > summary { list-style: none; cursor: pointer; }
-  details > summary::-webkit-details-marker { display: none; }
-  details[open] .faq-icon { transform: rotate(45deg); }
-
-  .config-chip { transition: transform .3s ease, box-shadow .3s ease; }
-  .config-chip:hover { transform: translateY(-5px) rotate(0deg) scale(1.04) !important; box-shadow: 0 18px 34px -14px rgba(0,0,0,0.25); z-index: 10; }
-
-  /* Trust strip: photo-strip perforation + running marquee */
-  .trust-strip { position: relative; }
-  .trust-strip::before, .trust-strip::after {
-    content: ""; position: absolute; left: 0; right: 0; height: 10px;
-    background-image: radial-gradient(circle, #fff 3px, transparent 3.5px);
-    background-size: 22px 10px; background-repeat: repeat-x; background-position: 4px center;
-  }
-  .trust-strip::before { top: 0; }
-  .trust-strip::after { bottom: 0; }
-  .marquee-track { display: flex; width: max-content; animation: marquee 28s linear infinite; }
-  .marquee-track:hover { animation-play-state: paused; }
-  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-  .trust-item { display: flex; align-items: center; white-space: nowrap; padding: 0 2rem; }
-  .trust-cut {
-    position: relative; width: 0; align-self: stretch; border-right: 2px dashed rgba(255,255,255,0.25);
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .marquee-track { animation: none; }
-  }
-</style>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/index.css">
 </head>
-<body class="bg-white min-h-screen">
+<body class="bg-white min-h-screen" data-page="index">
 
-<!-- HEADER -->
-<header class="sticky top-0 z-50 bg-white border-b border-gray-100">
-  <nav class="flex items-center justify-between px-6 sm:px-10" style="height:var(--header-h)" aria-label="Primary">
-    <div class="flex items-center gap-2">
-      <div class="w-9 h-9 rounded-full bg-[#6C4EF5] flex items-center justify-center text-white text-base">📷</div>
-      <span class="text-lg font-semibold text-[#3a3550]">Snapbox</span>
-    </div>
-
-    <div class="hidden md:flex items-center gap-8 text-[15px] text-[#4a4560] font-medium">
-      <a href="rent.html" class="hover:text-[#6C4EF5] transition">Rent</a>
-      <a href="#looking-for-heading" class="hover:text-[#6C4EF5] transition">Buy</a>
-      <a href="#software-heading" class="hover:text-[#6C4EF5] transition">Software</a>
-      <a href="#experience-heading" class="hover:text-[#6C4EF5] transition">Gallery</a>
-      <a href="#cost-heading" class="hover:text-[#6C4EF5] transition">Pricing</a>
-    </div>
-
-    <div class="flex items-center gap-3">
-      <button class="bg-[#6C4EF5] text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#5b3fe0] transition whitespace-nowrap">Get Started</button>
-    </div>
-  </nav>
-</header>
+<div id="site-header"></div>
 
 <!-- HERO -->
-<div class="w-full bg-white px-6 sm:px-10 py-6 relative overflow-hidden flex items-center" style="min-height:calc(100vh - var(--header-h))">
+<div class="w-full bg-white px-6 sm:px-10 py-10 lg:py-6 relative overflow-hidden flex items-center lg:[min-height:calc(100vh_-_var(--header-h))]">
 
   <svg class="absolute left-0 top-0 h-full w-1/2 text-[#efeef8] pointer-events-none" viewBox="0 0 400 600" fill="none">
     <path d="M-20 500 C 80 450, 60 350, 150 320 S 250 250, 200 150 S 100 50, 180 -20" stroke="currentColor" stroke-width="2"/>
@@ -90,56 +26,56 @@
   <div class="relative z-10 grid lg:grid-cols-2 gap-10 items-center w-full">
 
     <div class="max-w-lg">
-      <h1 class="text-5xl sm:text-6xl font-extrabold text-[#211f2e] leading-[1.05] tracking-tight">
-        Smile <span class="inline-block align-middle text-4xl">📸</span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#211f2e] leading-[1.05] tracking-tight">
+        Smile <span class="inline-block align-middle text-3xl sm:text-4xl">📸</span>
         <br>Without a
-        <br>Glitch <span class="inline-block align-middle text-4xl">✨</span>
+        <br>Glitch <span class="inline-block align-middle text-3xl sm:text-4xl">✨</span>
       </h1>
 
       <p class="mt-6 text-[#8b87a0] text-[15px] leading-relaxed max-w-sm">
         Every party deserves a booth. Instant prints, endless props, unforgettable moments — rent one, buy your own, or power the hardware you already have.
       </p>
 
-      <div class="mt-8 flex flex-nowrap gap-2 overflow-x-auto">
-        <a href="#looking-for-heading" class="shrink-0 bg-[#6C4EF5] text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#5b3fe0] transition whitespace-nowrap">Explore Rentals</a>
+      <div class="mt-8 flex flex-wrap gap-2">
+        <a href="rent.html" class="shrink-0 bg-[#6C4EF5] text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#5b3fe0] transition whitespace-nowrap">Explore Rentals</a>
         <a href="#looking-for-heading" class="shrink-0 bg-white border-2 border-[#6C4EF5] text-[#6C4EF5] text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#6C4EF5]/5 transition whitespace-nowrap">Shop Booths</a>
-        <a href="#software-heading" class="shrink-0 bg-white border-2 border-gray-200 text-[#3a3550] text-sm font-medium px-5 py-2.5 rounded-full hover:border-[#6C4EF5] hover:text-[#6C4EF5] transition whitespace-nowrap">Explore Software ↗</a>
+        <a href="software.html" class="shrink-0 bg-white border-2 border-gray-200 text-[#3a3550] text-sm font-medium px-5 py-2.5 rounded-full hover:border-[#6C4EF5] hover:text-[#6C4EF5] transition whitespace-nowrap">Explore Software ↗</a>
       </div>
     </div>
 
-    <div class="relative w-full max-w-[760px] mx-auto py-6">
+    <div class="relative w-full max-w-[760px] mx-auto py-8 lg:py-6">
 
-      <div class="flex items-end justify-center gap-3 sm:gap-5">
+      <div class="flex items-end justify-center gap-2 sm:gap-5">
 
         <!-- Instant photo 1 -->
-        <div class="photo-tile polaroid w-[210px] sm:w-[245px] shadow-xl rotate-[-2deg]">
+        <div class="photo-tile polaroid w-[clamp(84px,26vw,210px)] sm:w-[245px] shadow-xl rotate-[-2deg]">
           <div class="rounded-sm overflow-hidden aspect-[4/5] bg-black">
             <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600&h=750&fit=crop" alt="Friends celebrating at sunset, printed as an instant photo booth photo" class="w-full h-full object-cover">
           </div>
-          <p class="polaroid-caption mt-2 text-center">Weekend Weddings 🎉</p>
+          <p class="polaroid-caption mt-2 text-center text-[0.9rem] sm:text-[1.25rem]">Weekend Weddings 🎉</p>
         </div>
 
         <!-- Instant photo 2 -->
-        <div class="photo-tile polaroid w-[230px] sm:w-[265px] shadow-xl rotate-[1deg] z-10">
+        <div class="photo-tile polaroid w-[clamp(92px,29vw,230px)] sm:w-[265px] shadow-xl rotate-[1deg] z-10">
           <div class="rounded-sm overflow-hidden aspect-[4/5] bg-black">
             <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&h=750&fit=crop" alt="Crowd cheering at a live event, printed as an instant photo booth photo" class="w-full h-full object-cover">
           </div>
-          <p class="polaroid-caption mt-2 text-center">Instant Prints! 📸</p>
+          <p class="polaroid-caption mt-2 text-center text-[0.9rem] sm:text-[1.25rem]">Instant Prints! 📸</p>
         </div>
 
         <!-- Instant photo 3 -->
-        <div class="photo-tile polaroid w-[210px] sm:w-[245px] shadow-xl rotate-[2deg]">
+        <div class="photo-tile polaroid w-[clamp(84px,26vw,210px)] sm:w-[245px] shadow-xl rotate-[2deg]">
           <div class="rounded-sm overflow-hidden aspect-[4/5] bg-black">
             <img src="https://images.unsplash.com/photo-1496024840928-4c417adf211d?w=600&h=750&fit=crop" alt="Guests covered in colored powder at a party, printed as an instant photo booth photo" class="w-full h-full object-cover">
           </div>
-          <p class="polaroid-caption mt-2 text-center">Yay, so fun! ✨</p>
+          <p class="polaroid-caption mt-2 text-center text-[0.9rem] sm:text-[1.25rem]">Yay, so fun! ✨</p>
         </div>
 
       </div>
 
-      <div class="absolute -bottom-1 left-[6%] w-8 h-8 rounded-full bg-[#1c1c22] text-white flex items-center justify-center text-xs shadow-lg z-20">😎</div>
-      <div class="absolute -bottom-1 right-[6%] w-9 h-9 rounded-full bg-[#1c1c22] text-white flex items-center justify-center text-sm shadow-lg z-20">⭐</div>
-      <div class="absolute -top-2 left-1/2 -translate-x-1/2 bg-[#1c1c22] text-white text-xs font-semibold px-3 py-1.5 rounded-full rounded-bl-sm shadow-lg -rotate-6 z-20">Cheese! 🧀</div>
+      <div class="absolute -bottom-1 left-[6%] w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#1c1c22] text-white flex items-center justify-center text-xs shadow-lg z-20">😎</div>
+      <div class="absolute -bottom-1 right-[6%] w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#1c1c22] text-white flex items-center justify-center text-sm shadow-lg z-20">⭐</div>
+      <div class="absolute -top-2 left-1/2 -translate-x-1/2 bg-[#1c1c22] text-white text-[10px] sm:text-xs font-semibold px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full rounded-bl-sm shadow-lg -rotate-6 z-20 whitespace-nowrap">Cheese! 🧀</div>
     </div>
 
   </div>
@@ -225,7 +161,7 @@
             <p class="mt-3 text-[15px] text-[#8b87a0] leading-relaxed">
               From weddings to birthdays and corporate parties, a photo booth rental turns any event into a shareable moment. Search "photo booth near me" and we'll match you with an event photo booth or selfie booth built for your guest count.
             </p>
-            <div class="mt-auto pt-4"><a href="#" class="inline-block bg-[#6C4EF5] text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#5b3fe0] transition">Rent a Booth</a></div>
+            <div class="mt-auto pt-4"><a href="rent.html" class="inline-block bg-[#6C4EF5] text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#5b3fe0] transition">Rent a Booth</a></div>
           </div>
         </div>
 
@@ -247,7 +183,7 @@
             <p class="mt-3 text-[15px] text-[#8b87a0] leading-relaxed">
               Already have hardware? Our photo booth software turns any camera and screen into a full experience. It's the photo booth program and photo booth app booth operators use to run captures, filters, and prints.
             </p>
-            <div class="mt-auto pt-4"><a href="#" class="inline-block text-[#6C4EF5] font-semibold text-sm">Software ↗</a></div>
+            <div class="mt-auto pt-4"><a href="software.html" class="inline-block text-[#6C4EF5] font-semibold text-sm">Software ↗</a></div>
           </div>
         </div>
 
@@ -537,7 +473,7 @@
           <span class="rounded-full bg-[#b8d6f5]/30 text-[#3a3550] text-sm px-4 py-1.5">GIF</span>
           <span class="rounded-full bg-[#b8d6f5]/30 text-[#3a3550] text-sm px-4 py-1.5">Gallery</span>
         </div>
-        <a href="#" class="mt-6 inline-block text-[#6C4EF5] font-semibold">Explore Software ↗</a>
+        <a href="software.html" class="mt-6 inline-block text-[#6C4EF5] font-semibold">Explore Software ↗</a>
       </div>
       <div class="rounded-2xl ring-4 ring-white shadow-lg overflow-hidden bg-[#b8d6f5]/30 p-4">
         <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=440&fit=crop" alt="Photo booth software touchscreen showing AI filter and instant print options" class="w-full h-full object-cover rounded-xl">
@@ -755,30 +691,8 @@
 
 </main>
 
-<!-- FOOTER -->
-<footer class="bg-[#1c1c22] text-white">
-  <div class="max-w-6xl mx-auto px-6 sm:px-10 py-14">
-    <div class="grid sm:grid-cols-3 gap-4 pb-10 border-b border-white/10">
-      <a href="#looking-for-heading" class="rounded-full bg-white text-[#1c1c22] text-sm font-semibold px-5 py-3 text-center hover:bg-gray-100 transition">Explore Rentals</a>
-      <a href="#looking-for-heading" class="rounded-full border-2 border-white text-white text-sm font-semibold px-5 py-3 text-center hover:bg-white/10 transition">Shop Booths</a>
-      <a href="#software-heading" class="rounded-full border-2 border-white text-white text-sm font-semibold px-5 py-3 text-center hover:bg-white/10 transition">Explore Software ↗</a>
-    </div>
+<div id="site-footer"></div>
 
-    <div class="mt-10 flex flex-col sm:flex-row justify-between gap-6">
-      <div class="flex items-center gap-2">
-        <div class="w-8 h-8 rounded-full bg-[#6C4EF5] flex items-center justify-center text-white text-sm">📷</div>
-        <span class="font-semibold">Snapbox</span>
-      </div>
-      <nav aria-label="Footer" class="flex flex-wrap gap-6 text-sm text-white/70">
-        <a href="#looking-for-heading" class="hover:text-white transition">Home</a>
-        <a href="#experience-heading" class="hover:text-white transition">Gallery</a>
-        <a href="#cost-heading" class="hover:text-white transition">Packages</a>
-        <a href="#faq-heading" class="hover:text-white transition">FAQ</a>
-      </nav>
-    </div>
-    <p class="mt-8 text-xs text-white/40">© 2026 Snapbox. All rights reserved.</p>
-  </div>
-</footer>
-
+<script src="js/layout.js"></script>
 </body>
 </html>

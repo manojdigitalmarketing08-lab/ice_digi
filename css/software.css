@@ -1,0 +1,10 @@
+.media-card { transition: transform .35s ease, box-shadow .35s ease; cursor: pointer; }
+.media-card:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 24px 48px -16px rgba(0,0,0,0.28); }
+
+.hotspot { transition: transform .25s ease, box-shadow .25s ease; }
+.hotspot:hover { transform: scale(1.35); box-shadow: 0 0 0 6px rgba(108,78,245,0.2); }
+
+.carousel-track { display: flex; gap: 1.25rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: .5rem; }
+.carousel-track > * { scroll-snap-align: start; }
+.carousel-track::-webkit-scrollbar { height: 8px; }
+.carousel-track::-webkit-scrollbar-thumb { background: #e5e0f5; border-radius: 999px; }

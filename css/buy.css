@@ -1,0 +1,5 @@
+.photo-tile { transition: transform .35s ease, box-shadow .35s ease; cursor: pointer; }
+.photo-tile:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 24px 48px -16px rgba(0,0,0,0.28); }
+
+.filter-chip { transition: background-color .2s ease, color .2s ease, border-color .2s ease; }
+.filter-chip.active { background-color: #6C4EF5; color: #fff; border-color: #6C4EF5; }

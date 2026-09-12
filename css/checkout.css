@@ -1,0 +1,18 @@
+:root { --header-h: 68px; }
+
+.step-dot { transition: background-color .2s ease, color .2s ease, border-color .2s ease; }
+.field-input { transition: border-color .15s ease, box-shadow .15s ease; }
+.field-input:focus { outline: none; border-color: #6C4EF5; box-shadow: 0 0 0 3px rgba(108,78,245,0.15); }
+.pay-tab.active { border-color: #6C4EF5; background: #6C4EF5; color: #fff; }
+.summary-caret { transition: transform .2s ease; }
+details[open] .summary-caret { transform: rotate(180deg); }
+
+input[type="checkbox"].brand-check { accent-color: #6C4EF5; }
+input[type="radio"].brand-radio { accent-color: #6C4EF5; }
+
+#confirmation-view { display: none; }
+body.order-placed #checkout-view { display: none; }
+body.order-placed #confirmation-view { display: block; }
+body.order-placed { overflow-y: auto; }
+
+.timeline-dot { box-shadow: 0 0 0 4px #f2f0f5; }

@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Booth Rental for Weddings, Parties & Events | IceDigitec</title>
+<meta name="description" content="Rent a photo booth for your wedding, corporate event, or party. Browse 360, mirror, DSLR, digital, portable, and AI booths, configure your setup, and check availability online.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/rent.css">
+</head>
+<body class="bg-white min-h-screen" data-page="rent">
+
+<div id="site-header"></div>
+
+<!-- SECTION 1: HERO -->
+<div class="relative w-full overflow-hidden" style="min-height:calc(100vh - var(--header-h))">
+  <img src="https://images.unsplash.com/photo-1744189578759-5103cc188897?w=1600&h=1000&fit=crop" alt="Vintage automatic photo booth lit up at dusk outside a venue" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10"></div>
+
+  <div class="relative z-10 flex items-end h-full px-6 sm:px-10" style="min-height:calc(100vh - var(--header-h))">
+    <div class="max-w-2xl pb-16 sm:pb-24">
+      <span class="inline-block bg-white/15 backdrop-blur text-white text-xs font-semibold px-4 py-1.5 rounded-full">Photo Booth Rental</span>
+      <h1 class="mt-5 text-4xl sm:text-6xl font-extrabold text-white leading-[1.05] tracking-tight">
+        Photo Booth Rental for Weddings, Parties & Events
+      </h1>
+      <p class="mt-5 text-white/85 text-[15px] sm:text-base leading-relaxed max-w-lg">
+        Choose your booth, customize the experience, check your date, and book your event online.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#availability-heading" class="bg-[#6C4EF5] text-white text-sm font-medium px-6 py-3 rounded-full hover:bg-[#5b3fe0] transition">Check Availability</a>
+        <a href="#catalog-heading" class="border-2 border-white text-white text-sm font-medium px-6 py-3 rounded-full hover:bg-white/10 transition">Browse Booths</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <!-- SECTION 2: RENTAL PRODUCT SHOWCASE -->
+  <section aria-labelledby="catalog-heading" class="px-6 sm:px-10 py-20 lg:py-28">
+    <div class="max-w-6xl mx-auto">
+      <h2 id="catalog-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
+        Which Photo Booth Can You Rent for Your Event?
+      </h2>
+      <p class="mt-4 text-[15px] text-[#8b87a0] text-center max-w-2xl mx-auto leading-relaxed">
+        From full 360-degree platforms to compact digital kiosks, every machine below is available to rent for weddings, corporate events, and parties. Filter by booth type, event, or experience to find the right fit, then configure it and check your date.
+      </p>
+
+      <!-- Filters -->
+      <div class="mt-10 flex flex-col gap-3 items-center">
+        <div class="flex flex-wrap justify-center gap-2" role="group" aria-label="Filter by booth type">
+          <button class="filter-chip active rounded-full border border-gray-200 text-sm font-medium px-4 py-1.5" data-filter-group="type" data-filter="all">All</button>
+          <button class="filter-chip rounded-full border border-gray-200 text-sm font-medium px-4 py-1.5" data-filter-group="type" data-filter="360">360</button>
+          <button class="filter-chip rounded-full border border-gray-200 text-sm font-medium px-4 py-1.5" data-filter-group="type" data-filter="mirror">Mirror</button>
+          <button class="filter-chip rounded-full border border-gray-200 text-sm font-medium px-4 py-1.5" data-filter-group="type" data-filter="digital">Digital</button>
+          <button class="filter-chip rounded-full border border-gray-200 text-sm font-medium px-4 py-1.5" data-filter-group="type" data-filter="dslr">DSLR</button>
+          <button class="filter-chip rounded-full border border-gray-200 text-sm font-medium px-4 py-1.5" data-filter-group="type" data-filter="roaming">Roaming</button>
+          <button class="filter-chip rounded-full border border-gray-200 text-sm font-medium px-4 py-1.5" data-filter-group="type" data-filter="ai">AI</button>
+        </div>
+        <div class="flex flex-wrap justify-center gap-2" role="group" aria-label="Filter by event">
+          <button class="filter-chip active rounded-full border border-gray-200 text-sm font-medium px-4 py-1.5" data-filter-group="event" data-filter="all">All Events</button>
+          <button class="filter-chip rounded-full border border-gray-200 text-sm font-medium px-4 py-1.5" data-filter-group="event" data-filter="wedding">Wedding</button>
+          <button class="filter-chip rounded-full border border-gray-200 text-sm font-medium px-4 py-1.5" data-filter-group="event" data-filter="corporate">Corporate</button>
+          <button class="filter-chip rounded-full border border-gray-200 text-sm font-medium px-4 py-1.5" data-filter-group="event" data-filter="party">Party</button>
+          <button class="filter-chip rounded-full border border-gray-200 text-sm font-medium px-4 py-1.5" data-filter-group="event" data-filter="other">Other</button>
+        </div>
+      </div>
+
+      <!-- Product grid -->
+      <div id="product-grid" class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+
+        <article class="photo-tile rounded-2xl ring-1 ring-gray-100 shadow-sm overflow-hidden bg-white" data-type="360" data-event="wedding party">
+          <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1763236606697-01190f65d493?w=400&h=320&fit=crop')" role="img" aria-label="Photo booth with a glowing neon sign at dusk"></div>
+          <div class="p-4">
+            <span class="text-xs font-semibold text-[#6C4EF5]">360 Booth</span>
+            <h3 class="mt-1 font-semibold text-[#211f2e]">360 Video Booth</h3>
+            <p class="mt-1 text-xs text-[#8b87a0] leading-relaxed">Immersive slow-motion 360 video, built for weddings and parties that want a shareable centerpiece.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">360 Video</span>
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Digital Sharing</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-[#211f2e]">From $XXX / event</p>
+            <div class="mt-3 flex gap-2">
+              <a href="#configure-heading" class="flex-1 text-center border border-[#6C4EF5] text-[#6C4EF5] text-xs font-medium py-2 rounded-full hover:bg-[#6C4EF5]/5 transition">Configure</a>
+              <a href="checkout.html?type=rent" class="flex-1 text-center bg-[#6C4EF5] text-white text-xs font-medium py-2 rounded-full hover:bg-[#5b3fe0] transition">Check Date</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-tile rounded-2xl ring-1 ring-gray-100 shadow-sm overflow-hidden bg-white" data-type="mirror" data-event="wedding party">
+          <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1598658896948-0b31b21f14c8?w=400&h=320&fit=crop')" role="img" aria-label="Orange curtain photo booth interior with a retro screen"></div>
+          <div class="p-4">
+            <span class="text-xs font-semibold text-[#6C4EF5]">Mirror Booth</span>
+            <h3 class="mt-1 font-semibold text-[#211f2e]">Selfie Mirror Booth</h3>
+            <p class="mt-1 text-xs text-[#8b87a0] leading-relaxed">Full-length interactive mirror with touchscreen prompts, a favorite for parties and receptions.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Touchscreen</span>
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Instant Print</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-[#211f2e]">From $XXX / event</p>
+            <div class="mt-3 flex gap-2">
+              <a href="#configure-heading" class="flex-1 text-center border border-[#6C4EF5] text-[#6C4EF5] text-xs font-medium py-2 rounded-full hover:bg-[#6C4EF5]/5 transition">Configure</a>
+              <a href="checkout.html?type=rent" class="flex-1 text-center bg-[#6C4EF5] text-white text-xs font-medium py-2 rounded-full hover:bg-[#5b3fe0] transition">Check Date</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-tile rounded-2xl ring-1 ring-gray-100 shadow-sm overflow-hidden bg-white" data-type="dslr" data-event="wedding corporate">
+          <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1762709117928-b3662d515832?w=400&h=320&fit=crop')" role="img" aria-label="Young man smiling in front of a photo booth backdrop"></div>
+          <div class="p-4">
+            <span class="text-xs font-semibold text-[#6C4EF5]">DSLR Booth</span>
+            <h3 class="mt-1 font-semibold text-[#211f2e]">DSLR Portrait Booth</h3>
+            <p class="mt-1 text-xs text-[#8b87a0] leading-relaxed">Studio-grade DSLR capture and lighting for premium prints at weddings and corporate events.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">DSLR</span>
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Studio Lighting</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-[#211f2e]">From $XXX / event</p>
+            <div class="mt-3 flex gap-2">
+              <a href="#configure-heading" class="flex-1 text-center border border-[#6C4EF5] text-[#6C4EF5] text-xs font-medium py-2 rounded-full hover:bg-[#6C4EF5]/5 transition">Configure</a>
+              <a href="checkout.html?type=rent" class="flex-1 text-center bg-[#6C4EF5] text-white text-xs font-medium py-2 rounded-full hover:bg-[#5b3fe0] transition">Check Date</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-tile rounded-2xl ring-1 ring-gray-100 shadow-sm overflow-hidden bg-white" data-type="digital" data-event="party corporate">
+          <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1578376706507-35e6dd7af19c?w=400&h=320&fit=crop')" role="img" aria-label="Black and white photo booth showing its open door"></div>
+          <div class="p-4">
+            <span class="text-xs font-semibold text-[#6C4EF5]">Digital Booth</span>
+            <h3 class="mt-1 font-semibold text-[#211f2e]">Digital Kiosk Booth</h3>
+            <p class="mt-1 text-xs text-[#8b87a0] leading-relaxed">Fast, simple setup with touchscreen filters — ideal for parties and corporate mixers on a tight footprint.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Compact</span>
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Fast Setup</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-[#211f2e]">From $XXX / event</p>
+            <div class="mt-3 flex gap-2">
+              <a href="#configure-heading" class="flex-1 text-center border border-[#6C4EF5] text-[#6C4EF5] text-xs font-medium py-2 rounded-full hover:bg-[#6C4EF5]/5 transition">Configure</a>
+              <a href="checkout.html?type=rent" class="flex-1 text-center bg-[#6C4EF5] text-white text-xs font-medium py-2 rounded-full hover:bg-[#5b3fe0] transition">Check Date</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-tile rounded-2xl ring-1 ring-gray-100 shadow-sm overflow-hidden bg-white" data-type="roaming" data-event="wedding corporate party">
+          <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1701112501523-bc9f48e3753e?w=400&h=320&fit=crop')" role="img" aria-label="Photo booth with its curtain open in a parking lot"></div>
+          <div class="p-4">
+            <span class="text-xs font-semibold text-[#6C4EF5]">Roaming Booth</span>
+            <h3 class="mt-1 font-semibold text-[#211f2e]">Roaming Photographer Booth</h3>
+            <p class="mt-1 text-xs text-[#8b87a0] leading-relaxed">A photographer moves through your event with instant-print handheld gear — no fixed station needed.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Portable</span>
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Handheld</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-[#211f2e]">From $XXX / event</p>
+            <div class="mt-3 flex gap-2">
+              <a href="#configure-heading" class="flex-1 text-center border border-[#6C4EF5] text-[#6C4EF5] text-xs font-medium py-2 rounded-full hover:bg-[#6C4EF5]/5 transition">Configure</a>
+              <a href="checkout.html?type=rent" class="flex-1 text-center bg-[#6C4EF5] text-white text-xs font-medium py-2 rounded-full hover:bg-[#5b3fe0] transition">Check Date</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-tile rounded-2xl ring-1 ring-gray-100 shadow-sm overflow-hidden bg-white" data-type="ai" data-event="party corporate other">
+          <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1727422612294-f95e92613f77?w=400&h=320&fit=crop')" role="img" aria-label="Photo booth covered in graffiti and stickers"></div>
+          <div class="p-4">
+            <span class="text-xs font-semibold text-[#6C4EF5]">AI Booth</span>
+            <h3 class="mt-1 font-semibold text-[#211f2e]">AI Portrait Booth</h3>
+            <p class="mt-1 text-xs text-[#8b87a0] leading-relaxed">Generates themed AI portraits in seconds — a novelty centerpiece for parties and brand activations.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">AI-Powered</span>
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Themed</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-[#211f2e]">From $XXX / event</p>
+            <div class="mt-3 flex gap-2">
+              <a href="#configure-heading" class="flex-1 text-center border border-[#6C4EF5] text-[#6C4EF5] text-xs font-medium py-2 rounded-full hover:bg-[#6C4EF5]/5 transition">Configure</a>
+              <a href="checkout.html?type=rent" class="flex-1 text-center bg-[#6C4EF5] text-white text-xs font-medium py-2 rounded-full hover:bg-[#5b3fe0] transition">Check Date</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-tile rounded-2xl ring-1 ring-gray-100 shadow-sm overflow-hidden bg-white" data-type="360" data-event="corporate other">
+          <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1761973193217-4908920fcad5?w=400&h=320&fit=crop')" role="img" aria-label="Photo booth sign glowing with reflections"></div>
+          <div class="p-4">
+            <span class="text-xs font-semibold text-[#6C4EF5]">360 Booth</span>
+            <h3 class="mt-1 font-semibold text-[#211f2e]">360 Branded Booth</h3>
+            <p class="mt-1 text-xs text-[#8b87a0] leading-relaxed">A 360 platform with a custom branded backdrop, built for corporate activations and launch events.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Branding</span>
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">360 Video</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-[#211f2e]">From $XXX / event</p>
+            <div class="mt-3 flex gap-2">
+              <a href="#configure-heading" class="flex-1 text-center border border-[#6C4EF5] text-[#6C4EF5] text-xs font-medium py-2 rounded-full hover:bg-[#6C4EF5]/5 transition">Configure</a>
+              <a href="checkout.html?type=rent" class="flex-1 text-center bg-[#6C4EF5] text-white text-xs font-medium py-2 rounded-full hover:bg-[#5b3fe0] transition">Check Date</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-tile rounded-2xl ring-1 ring-gray-100 shadow-sm overflow-hidden bg-white" data-type="mirror" data-event="corporate other">
+          <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1701433507837-563082c84e7e?w=400&h=320&fit=crop')" role="img" aria-label="Person stepping into a small photo booth structure"></div>
+          <div class="p-4">
+            <span class="text-xs font-semibold text-[#6C4EF5]">Mirror Booth</span>
+            <h3 class="mt-1 font-semibold text-[#211f2e]">Mirror Booth — Corporate Edition</h3>
+            <p class="mt-1 text-xs text-[#8b87a0] leading-relaxed">Branded mirror booth overlays and prints, suited for trade shows, launches, and office parties.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Branding</span>
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Touchscreen</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-[#211f2e]">From $XXX / event</p>
+            <div class="mt-3 flex gap-2">
+              <a href="#configure-heading" class="flex-1 text-center border border-[#6C4EF5] text-[#6C4EF5] text-xs font-medium py-2 rounded-full hover:bg-[#6C4EF5]/5 transition">Configure</a>
+              <a href="checkout.html?type=rent" class="flex-1 text-center bg-[#6C4EF5] text-white text-xs font-medium py-2 rounded-full hover:bg-[#5b3fe0] transition">Check Date</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-tile rounded-2xl ring-1 ring-gray-100 shadow-sm overflow-hidden bg-white" data-type="digital" data-event="wedding">
+          <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1778641603107-850c6a5f66c0?w=400&h=320&fit=crop')" role="img" aria-label="Vintage photo booth with a tan curtain"></div>
+          <div class="p-4">
+            <span class="text-xs font-semibold text-[#6C4EF5]">Digital Booth</span>
+            <h3 class="mt-1 font-semibold text-[#211f2e]">Digital Booth — Wedding Edition</h3>
+            <p class="mt-1 text-xs text-[#8b87a0] leading-relaxed">Elegant framed digital booth with custom overlays matched to your wedding stationery and colors.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Custom Overlay</span>
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Print + Digital</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-[#211f2e]">From $XXX / event</p>
+            <div class="mt-3 flex gap-2">
+              <a href="#configure-heading" class="flex-1 text-center border border-[#6C4EF5] text-[#6C4EF5] text-xs font-medium py-2 rounded-full hover:bg-[#6C4EF5]/5 transition">Configure</a>
+              <a href="checkout.html?type=rent" class="flex-1 text-center bg-[#6C4EF5] text-white text-xs font-medium py-2 rounded-full hover:bg-[#5b3fe0] transition">Check Date</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-tile rounded-2xl ring-1 ring-gray-100 shadow-sm overflow-hidden bg-white" data-type="dslr" data-event="wedding">
+          <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1770658586578-5dece945ad19?w=400&h=320&fit=crop')" role="img" aria-label="Photo booth lit up in the snow at night"></div>
+          <div class="p-4">
+            <span class="text-xs font-semibold text-[#6C4EF5]">DSLR Booth</span>
+            <h3 class="mt-1 font-semibold text-[#211f2e]">DSLR Booth — Deluxe</h3>
+            <p class="mt-1 text-xs text-[#8b87a0] leading-relaxed">Full studio lighting rig and backdrop stand for wedding-grade portraits printed on-site.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Studio Rig</span>
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Backdrop</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-[#211f2e]">From $XXX / event</p>
+            <div class="mt-3 flex gap-2">
+              <a href="#configure-heading" class="flex-1 text-center border border-[#6C4EF5] text-[#6C4EF5] text-xs font-medium py-2 rounded-full hover:bg-[#6C4EF5]/5 transition">Configure</a>
+              <a href="checkout.html?type=rent" class="flex-1 text-center bg-[#6C4EF5] text-white text-xs font-medium py-2 rounded-full hover:bg-[#5b3fe0] transition">Check Date</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-tile rounded-2xl ring-1 ring-gray-100 shadow-sm overflow-hidden bg-white" data-type="roaming" data-event="party other">
+          <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1504578445021-765140cb8874?w=400&h=320&fit=crop')" role="img" aria-label="Sign reading free photo booth inside on the side of a building"></div>
+          <div class="p-4">
+            <span class="text-xs font-semibold text-[#6C4EF5]">Roaming Booth</span>
+            <h3 class="mt-1 font-semibold text-[#211f2e]">Roaming Booth — Party Pack</h3>
+            <p class="mt-1 text-xs text-[#8b87a0] leading-relaxed">Fast-moving handheld capture with instant prints for birthdays, reunions, and casual gatherings.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Instant Print</span>
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Portable</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-[#211f2e]">From $XXX / event</p>
+            <div class="mt-3 flex gap-2">
+              <a href="#configure-heading" class="flex-1 text-center border border-[#6C4EF5] text-[#6C4EF5] text-xs font-medium py-2 rounded-full hover:bg-[#6C4EF5]/5 transition">Configure</a>
+              <a href="checkout.html?type=rent" class="flex-1 text-center bg-[#6C4EF5] text-white text-xs font-medium py-2 rounded-full hover:bg-[#5b3fe0] transition">Check Date</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-tile rounded-2xl ring-1 ring-gray-100 shadow-sm overflow-hidden bg-white" data-type="ai" data-event="wedding party">
+          <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1634291242590-df0182554c76?w=400&h=320&fit=crop')" role="img" aria-label="Neon sign reading photo booth on a dark background"></div>
+          <div class="p-4">
+            <span class="text-xs font-semibold text-[#6C4EF5]">AI Booth</span>
+            <h3 class="mt-1 font-semibold text-[#211f2e]">AI Booth — Theme Pack</h3>
+            <p class="mt-1 text-xs text-[#8b87a0] leading-relaxed">Choose from seasonal AI themes generated instantly — a playful add-on for weddings and parties.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Seasonal Themes</span>
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">AI-Powered</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-[#211f2e]">From $XXX / event</p>
+            <div class="mt-3 flex gap-2">
+              <a href="#configure-heading" class="flex-1 text-center border border-[#6C4EF5] text-[#6C4EF5] text-xs font-medium py-2 rounded-full hover:bg-[#6C4EF5]/5 transition">Configure</a>
+              <a href="checkout.html?type=rent" class="flex-1 text-center bg-[#6C4EF5] text-white text-xs font-medium py-2 rounded-full hover:bg-[#5b3fe0] transition">Check Date</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-tile rounded-2xl ring-1 ring-gray-100 shadow-sm overflow-hidden bg-white" data-type="digital" data-event="other">
+          <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1556570836-1b2c15b33119?w=400&h=320&fit=crop')" role="img" aria-label="Vintage camera set up on a tripod beside a bicycle"></div>
+          <div class="p-4">
+            <span class="text-xs font-semibold text-[#6C4EF5]">Digital Booth</span>
+            <h3 class="mt-1 font-semibold text-[#211f2e]">Digital Booth — Compact</h3>
+            <p class="mt-1 text-xs text-[#8b87a0] leading-relaxed">Small-footprint kiosk that fits tight venues — fundraisers, reunions, and pop-up activations.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Small Footprint</span>
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Fast Setup</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-[#211f2e]">From $XXX / event</p>
+            <div class="mt-3 flex gap-2">
+              <a href="#configure-heading" class="flex-1 text-center border border-[#6C4EF5] text-[#6C4EF5] text-xs font-medium py-2 rounded-full hover:bg-[#6C4EF5]/5 transition">Configure</a>
+              <a href="checkout.html?type=rent" class="flex-1 text-center bg-[#6C4EF5] text-white text-xs font-medium py-2 rounded-full hover:bg-[#5b3fe0] transition">Check Date</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-tile rounded-2xl ring-1 ring-gray-100 shadow-sm overflow-hidden bg-white" data-type="roaming" data-event="wedding">
+          <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1788347101891-9e91920f99a5?w=400&h=320&fit=crop')" role="img" aria-label="Photo booth with a thatched roof and orange walls"></div>
+          <div class="p-4">
+            <span class="text-xs font-semibold text-[#6C4EF5]">Roaming Booth</span>
+            <h3 class="mt-1 font-semibold text-[#211f2e]">Roaming Booth — Wedding Edition</h3>
+            <p class="mt-1 text-xs text-[#8b87a0] leading-relaxed">A dedicated roaming photographer with instant prints, timed to your reception's key moments.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Dedicated Photographer</span>
+              <span class="bg-[#1c1c22] text-white text-[10px] font-semibold px-2 py-1 rounded-full">Instant Print</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-[#211f2e]">From $XXX / event</p>
+            <div class="mt-3 flex gap-2">
+              <a href="#configure-heading" class="flex-1 text-center border border-[#6C4EF5] text-[#6C4EF5] text-xs font-medium py-2 rounded-full hover:bg-[#6C4EF5]/5 transition">Configure</a>
+              <a href="checkout.html?type=rent" class="flex-1 text-center bg-[#6C4EF5] text-white text-xs font-medium py-2 rounded-full hover:bg-[#5b3fe0] transition">Check Date</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <p id="no-results" class="hidden mt-10 text-center text-sm text-[#8b87a0]">No booths match that combination yet — try a different filter.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 3: BOOTH TYPE DISCOVERY -->
+  <section aria-labelledby="booth-types-heading" class="px-6 sm:px-10 py-20 lg:py-28 bg-[#f2f0f5]">
+    <div class="max-w-6xl mx-auto">
+      <h2 id="booth-types-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
+        Which Type of Photo Booth Fits Your Event?
+      </h2>
+
+      <div class="mt-16 space-y-16">
+
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div class="rounded-2xl overflow-hidden ring-4 ring-white shadow-lg order-1">
+            <img src="https://images.unsplash.com/photo-1763236606697-01190f65d493?w=700&h=500&fit=crop" alt="Photo booth with a glowing neon sign at dusk" class="w-full h-full object-cover">
+          </div>
+          <div class="order-2">
+            <span class="text-xs font-semibold text-[#6C4EF5]">360 photo booth</span>
+            <h3 class="mt-2 text-xl sm:text-2xl font-semibold text-[#3a3550]">Would a 360 Photo Booth Make Your Event More Dynamic?</h3>
+            <p class="mt-3 text-[15px] text-[#8b87a0] leading-relaxed">A 360 video booth spins a camera arm around your guests for slow-motion, shareable clips — a strong centerpiece for weddings and parties that want more energy than a static photo.</p>
+            <a href="#catalog-heading" class="mt-4 inline-block text-[#6C4EF5] font-semibold text-sm">Explore 360 Booths</a>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div class="order-2 lg:order-1">
+            <span class="text-xs font-semibold text-[#6C4EF5]">selfie mirrors</span>
+            <h3 class="mt-2 text-xl sm:text-2xl font-semibold text-[#3a3550]">Would a Mirror Booth Create a More Interactive Experience?</h3>
+            <p class="mt-3 text-[15px] text-[#8b87a0] leading-relaxed">A full-length mirror booth invites guests to touch, pose, and print instantly — a natural fit for receptions and lounges where interaction matters more than a fixed backdrop.</p>
+            <a href="#catalog-heading" class="mt-4 inline-block text-[#6C4EF5] font-semibold text-sm">Explore Mirror Booths</a>
+          </div>
+          <div class="rounded-2xl overflow-hidden ring-4 ring-white shadow-lg order-1 lg:order-2">
+            <img src="https://images.unsplash.com/photo-1598658896948-0b31b21f14c8?w=700&h=500&fit=crop" alt="Orange curtain photo booth interior with a retro screen" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div class="rounded-2xl overflow-hidden ring-4 ring-white shadow-lg order-1">
+            <img src="https://images.unsplash.com/photo-1762709117928-b3662d515832?w=700&h=500&fit=crop" alt="Young man smiling in front of a photo booth backdrop" class="w-full h-full object-cover">
+          </div>
+          <div class="order-2">
+            <span class="text-xs font-semibold text-[#6C4EF5]">DSLR photo booth</span>
+            <h3 class="mt-2 text-xl sm:text-2xl font-semibold text-[#3a3550]">Would a DSLR Booth Be Better for Premium Photography?</h3>
+            <p class="mt-3 text-[15px] text-[#8b87a0] leading-relaxed">A DSLR booth pairs studio lighting with a full-frame camera for portrait-quality prints, best suited to weddings and corporate events where image quality is the priority.</p>
+            <a href="#catalog-heading" class="mt-4 inline-block text-[#6C4EF5] font-semibold text-sm">Explore DSLR Booths</a>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div class="order-2 lg:order-1">
+            <span class="text-xs font-semibold text-[#6C4EF5]">digital photo booth · selfie booth</span>
+            <h3 class="mt-2 text-xl sm:text-2xl font-semibold text-[#3a3550]">Would a Digital Booth Be the Simplest Choice?</h3>
+            <p class="mt-3 text-[15px] text-[#8b87a0] leading-relaxed">A digital selfie booth needs the smallest footprint and fastest setup, making it an easy default for parties, mixers, and venues with limited floor space.</p>
+            <a href="#catalog-heading" class="mt-4 inline-block text-[#6C4EF5] font-semibold text-sm">Explore Digital Booths</a>
+          </div>
+          <div class="rounded-2xl overflow-hidden ring-4 ring-white shadow-lg order-1 lg:order-2">
+            <img src="https://images.unsplash.com/photo-1578376706507-35e6dd7af19c?w=700&h=500&fit=crop" alt="Black and white photo booth showing its open door" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div class="rounded-2xl overflow-hidden ring-4 ring-white shadow-lg order-1">
+            <img src="https://images.unsplash.com/photo-1701112501523-bc9f48e3753e?w=700&h=500&fit=crop" alt="Photo booth with its curtain open in a parking lot" class="w-full h-full object-cover">
+          </div>
+          <div class="order-2">
+            <span class="text-xs font-semibold text-[#6C4EF5]">portable photo booth · mobile photo booth</span>
+            <h3 class="mt-2 text-xl sm:text-2xl font-semibold text-[#3a3550]">Would a Portable or Roaming Booth Suit Your Venue?</h3>
+            <p class="mt-3 text-[15px] text-[#8b87a0] leading-relaxed">A portable or roaming setup travels with a photographer instead of staying fixed in one spot, useful for outdoor venues, tight rooms, or events without a dedicated booth corner.</p>
+            <a href="#catalog-heading" class="mt-4 inline-block text-[#6C4EF5] font-semibold text-sm">Explore Roaming Booths</a>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div class="order-2 lg:order-1">
+            <span class="text-xs font-semibold text-[#6C4EF5]">AI photo booth</span>
+            <h3 class="mt-2 text-xl sm:text-2xl font-semibold text-[#3a3550]">Could an AI Booth Create a More Interactive Experience?</h3>
+            <p class="mt-3 text-[15px] text-[#8b87a0] leading-relaxed">An AI booth generates themed portraits from a single photo in seconds, giving guests a novelty keepsake that's different from a standard print or GIF.</p>
+            <a href="#catalog-heading" class="mt-4 inline-block text-[#6C4EF5] font-semibold text-sm">Explore AI Booths</a>
+          </div>
+          <div class="rounded-2xl overflow-hidden ring-4 ring-white shadow-lg order-1 lg:order-2">
+            <img src="https://images.unsplash.com/photo-1727422612294-f95e92613f77?w=700&h=500&fit=crop" alt="Photo booth covered in graffiti and stickers" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: EVENT EXPERIENCE -->
+  <section aria-labelledby="events-heading" class="px-6 sm:px-10 py-20 lg:py-28">
+    <div class="max-w-6xl mx-auto">
+      <h2 id="events-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
+        What Kind of Event Can You Transform With a Photo Booth?
+      </h2>
+
+      <div class="mt-14 grid sm:grid-cols-2 gap-8">
+
+        <div class="rounded-2xl overflow-hidden border-b-4 border-[#c8b8f5]">
+          <img src="https://images.unsplash.com/photo-1778641603107-850c6a5f66c0?w=600&h=380&fit=crop" alt="Vintage photo booth with a tan curtain" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-[#3a3550]">Could a Photo Booth Become Part of Your Wedding Celebration?</h3>
+            <p class="mt-2 text-sm text-[#8b87a0] leading-relaxed">A wedding photo booth gives guests a way to celebrate on their own terms, turning waiting time between formalities into a picture booth for wedding keepsakes everyone takes home.</p>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden border-b-4 border-[#c8b8f5]">
+          <img src="https://images.unsplash.com/photo-1701433507837-563082c84e7e?w=600&h=380&fit=crop" alt="Person stepping into a small photo booth structure" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-[#3a3550]">Could a Photo Booth Make Your Corporate Event More Memorable?</h3>
+            <p class="mt-2 text-sm text-[#8b87a0] leading-relaxed">An event photo booth at a conference, launch, or holiday party gives attendees a branded takeaway and gives your team a steady stream of shareable content.</p>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden border-b-4 border-[#c8b8f5]">
+          <img src="https://images.unsplash.com/photo-1634291242590-df0182554c76?w=600&h=380&fit=crop" alt="Neon sign reading photo booth on a dark background" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-[#3a3550]">Could a Selfie Booth Keep Your Party Guests Engaged?</h3>
+            <p class="mt-2 text-sm text-[#8b87a0] leading-relaxed">A party photo booth rental keeps guests moving and laughing between songs, giving birthdays, reunions, and holiday parties a built-in activity that needs no host.</p>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden border-b-4 border-[#c8b8f5]">
+          <img src="https://images.unsplash.com/photo-1504578445021-765140cb8874?w=600&h=380&fit=crop" alt="Sign reading free photo booth inside on the side of a building" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-[#3a3550]">Could a Photo Booth Fit Your Next Special Event?</h3>
+            <p class="mt-2 text-sm text-[#8b87a0] leading-relaxed">From fundraisers to reunions and school events, an event photo booth rental adapts its footprint, backdrop, and props to whatever the occasion calls for.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: RENTAL PACKAGES -->
+  <section aria-labelledby="packages-heading" class="px-6 sm:px-10 py-16 lg:py-24 bg-[#f2f0f5]">
+    <div class="max-w-6xl mx-auto">
+      <h2 id="packages-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
+        Which Photo Booth Rental Package Is Right for You?
+      </h2>
+
+      <div class="mt-14 grid lg:grid-cols-3 gap-6 items-start">
+
+        <div class="rounded-2xl bg-white ring-1 ring-gray-100 p-8">
+          <h3 class="text-lg font-semibold text-[#211f2e]">What Do You Get With the Basic Package?</h3>
+          <ul class="mt-5 space-y-2 text-sm text-[#8b87a0]">
+            <li>Booth of your choice</li>
+            <li>Standard experience</li>
+            <li>Digital sharing</li>
+            <li>Standard event duration</li>
+          </ul>
+          <a href="#availability-heading" class="mt-6 block text-center border-2 border-[#6C4EF5] text-[#6C4EF5] text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#6C4EF5]/5 transition">Choose Basic</a>
+        </div>
+
+        <div class="rounded-2xl bg-[#c8b8f5]/25 ring-2 ring-[#6C4EF5] p-8 lg:scale-105 shadow-lg">
+          <span class="bg-[#1c1c22] text-white text-xs font-semibold px-3 py-1.5 rounded-full">Most Popular</span>
+          <h3 class="mt-4 text-lg font-semibold text-[#211f2e]">What Makes the Premium Package Different?</h3>
+          <ul class="mt-5 space-y-2 text-sm text-[#3a3550]">
+            <li>Enhanced experience</li>
+            <li>Additional features</li>
+            <li>More flexibility</li>
+            <li>Extended duration options</li>
+          </ul>
+          <a href="#availability-heading" class="mt-6 block text-center bg-[#6C4EF5] text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#5b3fe0] transition">Choose Premium</a>
+        </div>
+
+        <div class="rounded-2xl bg-white ring-1 ring-gray-100 p-8">
+          <h3 class="text-lg font-semibold text-[#211f2e]">What Is Included in the Deluxe Experience?</h3>
+          <ul class="mt-5 space-y-2 text-sm text-[#8b87a0]">
+            <li>Full experience</li>
+            <li>Premium features</li>
+            <li>Branding and customization</li>
+            <li>Additional event options</li>
+          </ul>
+          <a href="#availability-heading" class="mt-6 block text-center border-2 border-[#6C4EF5] text-[#6C4EF5] text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#6C4EF5]/5 transition">Choose Deluxe</a>
+        </div>
+
+      </div>
+      <p class="mt-8 text-center text-xs text-[#8b87a0]">Exact inclusions and pricing are confirmed when you check availability for your date.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 6: WHAT'S INCLUDED -->
+  <section aria-labelledby="included-heading" class="px-6 sm:px-10 py-16 lg:py-24">
+    <div class="max-w-5xl mx-auto">
+      <h2 id="included-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
+        What Is Included With Your Photo Booth Rental?
+      </h2>
+
+      <ul class="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-5 text-sm text-[#3a3550]">
+        <li class="flex items-start gap-2"><span class="text-[#6C4EF5] font-bold">✓</span> Photo booth of your choice</li>
+        <li class="flex items-start gap-2"><span class="text-[#6C4EF5] font-bold">✓</span> Camera matched to booth type</li>
+        <li class="flex items-start gap-2"><span class="text-[#6C4EF5] font-bold">✓</span> Guest-facing touchscreen</li>
+        <li class="flex items-start gap-2"><span class="text-[#6C4EF5] font-bold">✓</span> Event-appropriate lighting</li>
+        <li class="flex items-start gap-2"><span class="text-[#6C4EF5] font-bold">✓</span> Booth operating software</li>
+        <li class="flex items-start gap-2"><span class="text-[#6C4EF5] font-bold">✓</span> Digital sharing to phone or email</li>
+        <li class="flex items-start gap-2"><span class="text-[#6C4EF5] font-bold">✓</span> On-site printing</li>
+        <li class="flex items-start gap-2"><span class="text-[#6C4EF5] font-bold">✓</span> Props for your guests</li>
+        <li class="flex items-start gap-2"><span class="text-[#6C4EF5] font-bold">✓</span> Backdrop for your setup</li>
+        <li class="flex items-start gap-2"><span class="text-[#6C4EF5] font-bold">✓</span> Delivery to your venue</li>
+        <li class="flex items-start gap-2"><span class="text-[#6C4EF5] font-bold">✓</span> On-site setup</li>
+        <li class="flex items-start gap-2"><span class="text-[#6C4EF5] font-bold">✓</span> Pickup after your event</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 7: CONFIGURATION -->
+  <section aria-labelledby="configure-heading" class="px-6 sm:px-10 py-20 lg:py-28 bg-[#f2f0f5]">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-2xl ring-4 ring-white shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1556570836-1b2c15b33119?w=600&h=480&fit=crop" alt="Vintage camera set up on a tripod beside a bicycle, used for booth configuration preview" class="w-full h-full object-cover">
+      </div>
+      <div>
+        <h2 id="configure-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e]">
+          How Can You Customize Your Photo Booth Rental?
+        </h2>
+        <p class="mt-3 text-[15px] text-[#8b87a0]">Choose the equipment and experience options that fit your event, venue, audience, and branding requirements.</p>
+
+        <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+          <div class="rounded-2xl border border-gray-200 bg-white px-3 py-3"><span class="block text-[11px] text-[#8b87a0]">BOOTH</span><span class="block text-sm font-semibold text-[#3a3550]">360</span></div>
+          <div class="rounded-2xl border border-gray-200 bg-white px-3 py-3"><span class="block text-[11px] text-[#8b87a0]">SCREEN</span><span class="block text-sm font-semibold text-[#3a3550]">27"</span></div>
+          <div class="rounded-2xl border-2 border-[#6C4EF5] bg-[#6C4EF5] text-white px-3 py-3"><span class="block text-[11px] opacity-80">CAMERA</span><span class="block text-sm font-semibold">DSLR</span></div>
+          <div class="rounded-2xl border border-gray-200 bg-white px-3 py-3"><span class="block text-[11px] text-[#8b87a0]">LIGHTING</span><span class="block text-sm font-semibold text-[#3a3550]">Studio</span></div>
+          <div class="rounded-2xl border border-gray-200 bg-white px-3 py-3"><span class="block text-[11px] text-[#8b87a0]">PRINTING</span><span class="block text-sm font-semibold text-[#3a3550]">4×6</span></div>
+          <div class="rounded-2xl border border-gray-200 bg-white px-3 py-3"><span class="block text-[11px] text-[#8b87a0]">SHARING</span><span class="block text-sm font-semibold text-[#3a3550]">QR + SMS</span></div>
+          <div class="rounded-2xl border border-gray-200 bg-white px-3 py-3 col-span-2 sm:col-span-1"><span class="block text-[11px] text-[#8b87a0]">BRANDING</span><span class="block text-sm font-semibold text-[#3a3550]">Custom</span></div>
+        </div>
+
+        <div class="mt-6 space-y-2 text-sm text-[#3a3550]">
+          <p><strong class="font-semibold">Can You Choose the Camera?</strong> — DSLR, mirrorless, or built-in options by booth type.</p>
+          <p><strong class="font-semibold">Can You Choose the Screen and Lighting?</strong> — Sized and tuned to your venue and guest flow.</p>
+          <p><strong class="font-semibold">Can You Add Printing and Sharing?</strong> — Instant prints alongside QR and digital delivery.</p>
+          <p><strong class="font-semibold">Can You Add Custom Branding?</strong> — Logos and overlays on every print and shared photo.</p>
+        </div>
+
+        <a href="#availability-heading" class="mt-6 inline-block bg-[#6C4EF5] text-white text-sm font-medium px-6 py-3 rounded-full hover:bg-[#5b3fe0] transition">Configure This Booth</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: RENTAL REQUIREMENTS -->
+  <section aria-labelledby="requirements-heading" class="px-6 sm:px-10 py-16 lg:py-24">
+    <div class="max-w-6xl mx-auto">
+      <h2 id="requirements-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
+        What Does Your Venue Need for a Photo Booth?
+      </h2>
+
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <div class="w-12 h-12 rounded-full bg-[#6C4EF5]/10 text-[#6C4EF5] flex items-center justify-center text-xl">📐</div>
+          <h3 class="mt-3 font-semibold text-[#211f2e]">Space</h3>
+          <p class="mt-1 text-sm text-[#8b87a0]">How much floor area is required for your chosen booth?</p>
+        </div>
+        <div>
+          <div class="w-12 h-12 rounded-full bg-[#6C4EF5]/10 text-[#6C4EF5] flex items-center justify-center text-xl">🔌</div>
+          <h3 class="mt-3 font-semibold text-[#211f2e]">Power</h3>
+          <p class="mt-1 text-sm text-[#8b87a0]">What power access is needed near the setup location?</p>
+        </div>
+        <div>
+          <div class="w-12 h-12 rounded-full bg-[#6C4EF5]/10 text-[#6C4EF5] flex items-center justify-center text-xl">🚪</div>
+          <h3 class="mt-3 font-semibold text-[#211f2e]">Access</h3>
+          <p class="mt-1 text-sm text-[#8b87a0]">Can the equipment reach the setup location easily?</p>
+        </div>
+        <div>
+          <div class="w-12 h-12 rounded-full bg-[#6C4EF5]/10 text-[#6C4EF5] flex items-center justify-center text-xl">📶</div>
+          <h3 class="mt-3 font-semibold text-[#211f2e]">Connectivity</h3>
+          <p class="mt-1 text-sm text-[#8b87a0]">Does the experience require Wi-Fi or mobile connectivity?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: BOOKING FLOW -->
+  <section aria-labelledby="booking-heading" class="px-6 sm:px-10 py-16 lg:py-24 bg-[#f2f0f5]">
+    <div class="max-w-6xl mx-auto">
+      <h2 id="booking-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
+        How Does Photo Booth Rental Booking Work?
+      </h2>
+
+      <div class="mt-16 relative">
+        <div class="hidden sm:block absolute top-6 left-[10%] right-[10%] h-0.5 bg-gray-300"></div>
+        <div class="grid sm:grid-cols-5 gap-8 relative">
+          <div class="text-center">
+            <span class="block text-5xl font-extrabold text-[#6C4EF5]/20 leading-none">01</span>
+            <h3 class="mt-2 text-base font-semibold text-[#211f2e]">Choose Your Booth</h3>
+            <p class="mt-2 text-xs text-[#8b87a0]">Browse available rental machines.</p>
+          </div>
+          <div class="text-center">
+            <span class="block text-5xl font-extrabold text-[#6C4EF5]/20 leading-none">02</span>
+            <h3 class="mt-2 text-base font-semibold text-[#211f2e]">Select Your Date</h3>
+            <p class="mt-2 text-xs text-[#8b87a0]">Enter event date, duration and location.</p>
+          </div>
+          <div class="text-center">
+            <span class="block text-5xl font-extrabold text-[#6C4EF5]/20 leading-none">03</span>
+            <h3 class="mt-2 text-base font-semibold text-[#211f2e]">Configure</h3>
+            <p class="mt-2 text-xs text-[#8b87a0]">Add equipment, branding and options.</p>
+          </div>
+          <div class="text-center">
+            <span class="block text-5xl font-extrabold text-[#6C4EF5]/20 leading-none">04</span>
+            <h3 class="mt-2 text-base font-semibold text-[#211f2e]">Review</h3>
+            <p class="mt-2 text-xs text-[#8b87a0]">See your package and total price.</p>
+          </div>
+          <div class="text-center">
+            <span class="block text-5xl font-extrabold text-[#6C4EF5]/20 leading-none">05</span>
+            <h3 class="mt-2 text-base font-semibold text-[#211f2e]">Book</h3>
+            <p class="mt-2 text-xs text-[#8b87a0]">Pay the deposit and confirm your event.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: RENTAL COST -->
+  <section aria-labelledby="cost-heading" class="px-6 sm:px-10 py-16 lg:py-24">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 id="cost-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e]">
+        How Much Does Photo Booth Rental Cost?
+      </h2>
+
+      <div class="mt-10 flex flex-col items-center gap-1 text-lg font-semibold text-[#3a3550]">
+        <span>BASE RENTAL</span>
+        <span class="text-[#8b87a0] text-2xl leading-none">+</span>
+        <span>DURATION</span>
+        <span class="text-[#8b87a0] text-2xl leading-none">+</span>
+        <span>BOOTH TYPE</span>
+        <span class="text-[#8b87a0] text-2xl leading-none">+</span>
+        <span>ADD-ONS</span>
+        <span class="text-[#8b87a0] text-2xl leading-none">+</span>
+        <span>DELIVERY</span>
+        <span class="text-[#8b87a0] text-2xl leading-none">+</span>
+        <span>SETUP</span>
+        <span class="text-[#8b87a0] text-2xl leading-none">=</span>
+        <span class="text-[#6C4EF5] text-2xl">TOTAL</span>
+      </div>
+
+      <p class="mt-8 text-sm text-[#8b87a0] leading-relaxed">
+        Photo booth rental prices vary based on the booth you select, rental duration, event location, add-ons, and delivery or setup needs. Check your actual photo booth rental cost by selecting your booth and event details below.
+      </p>
+      <a href="#availability-heading" class="mt-6 inline-block bg-[#6C4EF5] text-white text-sm font-medium px-6 py-3 rounded-full hover:bg-[#5b3fe0] transition">Check Rental Availability</a>
+    </div>
+  </section>
+
+  <!-- SECTION 11: AVAILABILITY / LOCATION -->
+  <section aria-labelledby="availability-heading" class="px-6 sm:px-10 py-16 lg:py-24 bg-[#f2f0f5]">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 id="availability-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e]">
+        How Can You Find a Photo Booth Rental Near You?
+      </h2>
+      <p class="mt-4 text-[15px] text-[#8b87a0] leading-relaxed max-w-xl mx-auto">
+        Enter your location, event date, and duration, and we'll show which rental options are available near you for that day.
+      </p>
+
+      <form class="mt-10 grid sm:grid-cols-3 gap-4 text-left" onsubmit="return false">
+        <div>
+          <label for="rent-location" class="block text-xs font-semibold text-[#3a3550] uppercase">Where Is Your Event?</label>
+          <input id="rent-location" type="text" placeholder="Enter location" class="mt-2 w-full rounded-full border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#6C4EF5]">
+        </div>
+        <div>
+          <label for="rent-date" class="block text-xs font-semibold text-[#3a3550] uppercase">When Is Your Event?</label>
+          <input id="rent-date" type="date" class="mt-2 w-full rounded-full border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#6C4EF5]">
+        </div>
+        <div>
+          <label for="rent-duration" class="block text-xs font-semibold text-[#3a3550] uppercase">How Long?</label>
+          <select id="rent-duration" class="mt-2 w-full rounded-full border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#6C4EF5]">
+            <option>2 hours</option>
+            <option>4 hours</option>
+            <option>6 hours</option>
+            <option>Full day</option>
+          </select>
+        </div>
+        <button type="submit" class="sm:col-span-3 bg-[#6C4EF5] text-white text-sm font-semibold px-6 py-3 rounded-full hover:bg-[#5b3fe0] transition">Check Availability</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SECTION 12: RENTAL EXPERIENCE / SOCIAL PROOF -->
+  <section aria-labelledby="experience-heading" class="px-6 sm:px-10 py-20 lg:py-28">
+    <div class="max-w-6xl mx-auto">
+      <h2 id="experience-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
+        What Does a Great Photo Booth Rental Experience Look Like?
+      </h2>
+
+      <div class="mt-12 relative rounded-2xl overflow-hidden ring-4 ring-white shadow-lg">
+        <img src="https://images.unsplash.com/photo-1788347101891-9e91920f99a5?w=1400&h=700&fit=crop" alt="Photo booth with a thatched roof and orange walls at an event" class="w-full h-72 sm:h-96 object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 right-6 flex flex-wrap gap-3">
+          <span class="bg-white/15 backdrop-blur text-white text-xs font-semibold px-4 py-2 rounded-full">Easy Booking</span>
+          <span class="bg-white/15 backdrop-blur text-white text-xs font-semibold px-4 py-2 rounded-full">Professional Equipment</span>
+          <span class="bg-white/15 backdrop-blur text-white text-xs font-semibold px-4 py-2 rounded-full">Memorable Experiences</span>
+        </div>
+      </div>
+
+      <div class="mt-10 grid sm:grid-cols-2 gap-6">
+        <article class="bg-white rounded-2xl border border-gray-100 p-6 border-l-4 border-l-[#6C4EF5]">
+          <p class="text-[15px] text-[#3a3550] leading-relaxed">"Booking was simple and the booth arrived exactly on schedule — guests were still using it an hour after we planned to pack up."</p>
+          <p class="mt-4 text-sm font-semibold text-[#211f2e]">Aisha R. — Wedding</p>
+        </article>
+        <article class="bg-white rounded-2xl border border-gray-100 p-6 border-l-4 border-l-[#6C4EF5]">
+          <p class="text-[15px] text-[#3a3550] leading-relaxed">"We configured branding for our launch event in minutes and the setup team handled the rest — one of the easiest vendors we booked."</p>
+          <p class="mt-4 text-sm font-semibold text-[#211f2e]">Tomas V. — Corporate Event</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 13: WHY CHOOSE US -->
+  <section aria-labelledby="why-choose-heading" class="px-6 sm:px-10 py-20 lg:py-28 bg-[#f2f0f5]">
+    <div class="max-w-6xl mx-auto">
+      <h2 id="why-choose-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
+        Why Choose Us for Your Photo Booth Rental?
+      </h2>
+
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="border-t-4 border-[#6C4EF5]/30 pt-4">
+          <h3 class="font-semibold text-[#211f2e]">A Booth for Every Experience</h3>
+          <p class="mt-1 text-sm text-[#8b87a0]">Multiple booth formats for different events, from intimate parties to large weddings.</p>
+        </div>
+        <div class="border-t-4 border-[#6C4EF5]/30 pt-4">
+          <h3 class="font-semibold text-[#211f2e]">Simple Online Booking</h3>
+          <p class="mt-1 text-sm text-[#8b87a0]">Choose, configure, and check availability without a single phone call.</p>
+        </div>
+        <div class="border-t-4 border-[#6C4EF5]/30 pt-4">
+          <h3 class="font-semibold text-[#211f2e]">Flexible Configurations</h3>
+          <p class="mt-1 text-sm text-[#8b87a0]">Select the equipment and options you actually need for your event.</p>
+        </div>
+        <div class="border-t-4 border-[#6C4EF5]/30 pt-4">
+          <h3 class="font-semibold text-[#211f2e]">Event-Ready Equipment</h3>
+          <p class="mt-1 text-sm text-[#8b87a0]">Every booth is built around real event requirements, not showroom conditions.</p>
+        </div>
+        <div class="border-t-4 border-[#6C4EF5]/30 pt-4">
+          <h3 class="font-semibold text-[#211f2e]">Professional Support</h3>
+          <p class="mt-1 text-sm text-[#8b87a0]">Support throughout the rental process, from booking to pickup.</p>
+        </div>
+        <div class="border-t-4 border-[#6C4EF5]/30 pt-4">
+          <h3 class="font-semibold text-[#211f2e]">One Place to Rent or Buy</h3>
+          <p class="mt-1 text-sm text-[#8b87a0]">Rent today, or explore ownership when your needs change.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 14: FAQ -->
+  <section aria-labelledby="faq-heading" class="px-6 sm:px-10 py-20 lg:py-28">
+    <div class="max-w-3xl mx-auto">
+      <h2 id="faq-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center">
+        What Do People Ask Before Renting a Photo Booth?
+      </h2>
+
+      <div class="mt-12 divide-y divide-gray-100">
+        <details class="py-5 group">
+          <summary class="flex items-center justify-between">
+            <h3 class="text-base font-medium text-[#211f2e]">How much does it cost to rent a photo booth?</h3>
+            <span class="faq-icon text-[#6C4EF5] text-xl transition-transform">+</span>
+          </summary>
+          <p class="mt-3 text-[15px] text-[#8b87a0]">Photo booth rental cost depends on the booth you choose, event duration, location, and any add-ons like branding or extra printing.</p>
+        </details>
+        <details class="py-5 group">
+          <summary class="flex items-center justify-between">
+            <h3 class="text-base font-medium text-[#211f2e]">How far in advance should you book a photo booth?</h3>
+            <span class="faq-icon text-[#6C4EF5] text-xl transition-transform">+</span>
+          </summary>
+          <p class="mt-3 text-[15px] text-[#8b87a0]">Popular dates and booth types can book out weeks ahead, so checking availability as soon as your date is set is recommended.</p>
+        </details>
+        <details class="py-5 group">
+          <summary class="flex items-center justify-between">
+            <h3 class="text-base font-medium text-[#211f2e]">What types of photo booths can you rent?</h3>
+            <span class="faq-icon text-[#6C4EF5] text-xl transition-transform">+</span>
+          </summary>
+          <p class="mt-3 text-[15px] text-[#8b87a0]">360, mirror, digital, DSLR, selfie, and AI booths are all available to rent, each suited to different events and venues.</p>
+        </details>
+        <details class="py-5 group">
+          <summary class="flex items-center justify-between">
+            <h3 class="text-base font-medium text-[#211f2e]">Can you customize a photo booth rental?</h3>
+            <span class="faq-icon text-[#6C4EF5] text-xl transition-transform">+</span>
+          </summary>
+          <p class="mt-3 text-[15px] text-[#8b87a0]">Yes — camera, screen, lighting, printing, sharing, and branding can all be configured to match your event.</p>
+        </details>
+        <details class="py-5 group">
+          <summary class="flex items-center justify-between">
+            <h3 class="text-base font-medium text-[#211f2e]">Does photo booth rental include delivery and setup?</h3>
+            <span class="faq-icon text-[#6C4EF5] text-xl transition-transform">+</span>
+          </summary>
+          <p class="mt-3 text-[15px] text-[#8b87a0]">Yes — delivery, setup, and pickup are included as part of your rental package.</p>
+        </details>
+        <details class="py-5 group">
+          <summary class="flex items-center justify-between">
+            <h3 class="text-base font-medium text-[#211f2e]">How long can you rent a photo booth?</h3>
+            <span class="faq-icon text-[#6C4EF5] text-xl transition-transform">+</span>
+          </summary>
+          <p class="mt-3 text-[15px] text-[#8b87a0]">Rental duration is selected when you check availability, from a few hours to a full-day event.</p>
+        </details>
+        <details class="py-5 group">
+          <summary class="flex items-center justify-between">
+            <h3 class="text-base font-medium text-[#211f2e]">Can you rent a photo booth near you?</h3>
+            <span class="faq-icon text-[#6C4EF5] text-xl transition-transform">+</span>
+          </summary>
+          <p class="mt-3 text-[15px] text-[#8b87a0]">Enter your location, date, and duration in the availability tool above to see rental options near you.</p>
+        </details>
+        <details class="py-5 group">
+          <summary class="flex items-center justify-between">
+            <h3 class="text-base font-medium text-[#211f2e]">Can you rent a photo booth for a wedding or party?</h3>
+            <span class="faq-icon text-[#6C4EF5] text-xl transition-transform">+</span>
+          </summary>
+          <p class="mt-3 text-[15px] text-[#8b87a0]">Yes — weddings and parties are two of the most common events booked, with packages sized for each.</p>
+        </details>
+        <details class="py-5 group">
+          <summary class="flex items-center justify-between">
+            <h3 class="text-base font-medium text-[#211f2e]">Can you add printing and digital sharing?</h3>
+            <span class="faq-icon text-[#6C4EF5] text-xl transition-transform">+</span>
+          </summary>
+          <p class="mt-3 text-[15px] text-[#8b87a0]">Yes — most booths support instant printing alongside QR or SMS digital sharing.</p>
+        </details>
+        <details class="py-5 group">
+          <summary class="flex items-center justify-between">
+            <h3 class="text-base font-medium text-[#211f2e]">What space and power does a photo booth require?</h3>
+            <span class="faq-icon text-[#6C4EF5] text-xl transition-transform">+</span>
+          </summary>
+          <p class="mt-3 text-[15px] text-[#8b87a0]">Requirements vary by booth type — space, power access, and connectivity needs are confirmed once you select a machine.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/layout.js"></script>
+<script src="js/product-filter.js"></script>
+</body>
+</html>
