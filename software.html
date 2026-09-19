@@ -14,23 +14,22 @@
 <div id="site-header"></div>
 
 <!-- SECTION 1: HERO -->
-<div class="relative w-full overflow-hidden bg-[#111017]" style="min-height:calc(100vh - var(--header-h))">
-  <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1600&h=1000&fit=crop" alt="Photo booth software interface showing a live event capture screen" class="absolute inset-0 w-full h-full object-cover opacity-60">
+<div class="relative w-full overflow-hidden bg-[#111017]" style="height:calc(100vh - var(--header-h));min-height:560px">
   <div class="absolute inset-0 bg-gradient-to-r from-[#111017] via-[#111017]/85 to-[#111017]/20"></div>
   <div class="absolute inset-0 bg-gradient-to-t from-[#111017] via-transparent to-transparent"></div>
 
-  <div class="relative z-10 flex items-center h-full px-6 sm:px-10 py-16" style="min-height:calc(100vh - var(--header-h))">
+  <div class="relative z-10 flex items-center h-full px-8 sm:px-12 py-8" style="height:calc(100vh - var(--header-h));min-height:560px">
     <div class="max-w-6xl mx-auto w-full grid lg:grid-cols-2 gap-10 items-center">
 
       <div class="max-w-xl">
         <span class="inline-block bg-white/10 backdrop-blur text-white text-xs font-semibold px-4 py-1.5 rounded-full">Photo Booth Software</span>
-        <h1 class="mt-5 text-4xl sm:text-6xl font-extrabold text-white leading-[1.05] tracking-tight">
+        <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-[1.1] tracking-tight">
           Photo Booth Software Built to Power Better Experiences at Every Event
         </h1>
-        <p class="mt-5 text-[15px] sm:text-base text-white/75 leading-relaxed max-w-md">
+        <p class="mt-4 text-[15px] sm:text-base text-white/75 leading-relaxed max-w-md">
           Capture, create, print and share from one flexible photo booth platform.
         </p>
-        <div class="mt-8 flex flex-wrap gap-3">
+        <div class="mt-6 flex flex-wrap gap-3">
           <a href="#" class="bg-[#6C4EF5] text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#5b3fe0] transition whitespace-nowrap">Explore Software ↗</a>
           <a href="#devices-heading" class="border-2 border-white/40 text-white text-sm font-medium px-5 py-2.5 rounded-full hover:border-white transition whitespace-nowrap">See Compatible Booths</a>
         </div>
@@ -38,7 +37,7 @@
 
       <div class="relative hidden lg:block">
         <div class="rounded-2xl ring-4 ring-white/10 shadow-2xl overflow-hidden bg-[#1c1c22]">
-          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700&h=520&fit=crop&crop=entropy" alt="Software touchscreen interface for a photo booth session" class="w-full h-full object-cover">
+          <img src="images/booth-digital-compact.webp" alt="Enclosed digital photo booth compatible with the software" class="w-full h-full object-cover">
         </div>
         <div class="absolute -bottom-4 -left-6 h-1.5 w-2/3 rounded-full bg-[#b8d6f5]"></div>
       </div>
@@ -50,7 +49,7 @@
 <main>
 
   <!-- SECTION 2: What Can the Software Do -->
-  <section aria-labelledby="capabilities-heading" class="px-6 sm:px-10 py-20 lg:py-28">
+  <section aria-labelledby="capabilities-heading" class="px-8 sm:px-12 py-20 lg:py-28">
     <div class="max-w-6xl mx-auto">
       <h2 id="capabilities-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
         What Can Photo Booth Software Help You Do?
@@ -61,57 +60,55 @@
 
       <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div>
-          <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-[#f2f0f5]">
-            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=300&fit=crop" alt="Software capture screen mid-countdown" class="w-full h-full object-cover">
-          </div>
+          <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-[#f4f3f8] border-2 border-dashed border-gray-300 flex flex-col items-center justify-center gap-1 text-[#b3aec2]" role="img" aria-label="Photo needed"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.174C3.023 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.773-1.994-1.802-2.169a47.87 47.87 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"/><path d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/></svg><span class="text-[10px] font-medium">Add photo</span></div>
           <h3 class="mt-3 font-semibold text-[#211f2e] text-[15px]">Can You Capture Photos and Videos?</h3>
           <p class="mt-1 text-sm text-[#8b87a0]">Guests capture stills, boomerangs, or short clips from a single touchscreen flow.</p>
         </div>
         <div>
           <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-[#f2f0f5]">
-            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop" alt="Guests interacting with an interactive photo booth session" class="w-full h-full object-cover">
+            <img src="images/booth-selfie-mirror.webp" alt="Guests interacting with an interactive photo booth session" class="w-full h-full object-cover">
           </div>
           <h3 class="mt-3 font-semibold text-[#211f2e] text-[15px]">Can You Create More Interactive Experiences?</h3>
           <p class="mt-1 text-sm text-[#8b87a0]">Prompts, mini-games, and multi-step flows keep an interactive photo booth engaging.</p>
         </div>
         <div>
           <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-[#f2f0f5]">
-            <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=400&h=300&fit=crop" alt="Instant print output from a photo booth printer" class="w-full h-full object-cover">
+            <div class="w-full h-full bg-[#f4f3f8] border-2 border-dashed border-gray-300 flex flex-col items-center justify-center gap-1 text-[#b3aec2]" role="img" aria-label="Photo needed"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.174C3.023 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.773-1.994-1.802-2.169a47.87 47.87 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"/><path d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/></svg><span class="text-[10px] font-medium">Add photo</span></div>
           </div>
           <h3 class="mt-3 font-semibold text-[#211f2e] text-[15px]">Can You Print Photos Instantly?</h3>
           <p class="mt-1 text-sm text-[#8b87a0]">Sends finished images straight to a connected printer in seconds, where supported.</p>
         </div>
         <div>
           <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-[#f2f0f5]">
-            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=400&h=300&fit=crop" alt="QR code sharing screen after a photo booth capture" class="w-full h-full object-cover">
+            <div class="w-full h-full bg-[#f4f3f8] border-2 border-dashed border-gray-300 flex flex-col items-center justify-center gap-1 text-[#b3aec2]" role="img" aria-label="Photo needed"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.174C3.023 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.773-1.994-1.802-2.169a47.87 47.87 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"/><path d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/></svg><span class="text-[10px] font-medium">Add photo</span></div>
           </div>
           <h3 class="mt-3 font-semibold text-[#211f2e] text-[15px]">Can Guests Share Photos Digitally?</h3>
           <p class="mt-1 text-sm text-[#8b87a0]">QR codes, SMS, and a digital gallery get every capture onto a guest's phone.</p>
         </div>
         <div>
           <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-[#f2f0f5]">
-            <img src="https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=400&h=300&fit=crop" alt="Custom branded photo template with event logo" class="w-full h-full object-cover">
+            <div class="w-full h-full bg-[#f4f3f8] border-2 border-dashed border-gray-300 flex flex-col items-center justify-center gap-1 text-[#b3aec2]" role="img" aria-label="Photo needed"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.174C3.023 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.773-1.994-1.802-2.169a47.87 47.87 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"/><path d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/></svg><span class="text-[10px] font-medium">Add photo</span></div>
           </div>
           <h3 class="mt-3 font-semibold text-[#211f2e] text-[15px]">Can You Add Your Own Branding?</h3>
           <p class="mt-1 text-sm text-[#8b87a0]">Custom templates, logos, and event colors carry across every print and share.</p>
         </div>
         <div>
           <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-[#f2f0f5]">
-            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400&h=300&fit=crop" alt="Boomerang animation preview on a photo booth screen" class="w-full h-full object-cover">
+            <img src="images/hero-instant-photo-2.webp" alt="AI photo booth kiosk screen displaying a captured photo" class="w-full h-full object-cover">
           </div>
           <h3 class="mt-3 font-semibold text-[#211f2e] text-[15px]">Can You Create GIFs and Boomerangs?</h3>
           <p class="mt-1 text-sm text-[#8b87a0]">Short looping animations render on-screen in seconds, ready to share.</p>
         </div>
         <div>
           <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-[#f2f0f5]">
-            <img src="https://images.unsplash.com/photo-1496024840928-4c417adf211d?w=400&h=300&fit=crop" alt="Green screen composite showing a swapped event background" class="w-full h-full object-cover">
+            <div class="w-full h-full bg-[#f4f3f8] border-2 border-dashed border-gray-300 flex flex-col items-center justify-center gap-1 text-[#b3aec2]" role="img" aria-label="Photo needed"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.174C3.023 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.773-1.994-1.802-2.169a47.87 47.87 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"/><path d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/></svg><span class="text-[10px] font-medium">Add photo</span></div>
           </div>
           <h3 class="mt-3 font-semibold text-[#211f2e] text-[15px]">Can You Use Green Screen Effects?</h3>
           <p class="mt-1 text-sm text-[#8b87a0]">Swap in any backdrop so the venue never limits the scene.</p>
         </div>
         <div>
           <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-[#f2f0f5]">
-            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=300&fit=crop" alt="AI-generated themed portrait from a photo booth session" class="w-full h-full object-cover">
+            <img src="images/booth-ai-portrait.webp" alt="AI-generated themed portrait from a photo booth session" class="w-full h-full object-cover">
           </div>
           <h3 class="mt-3 font-semibold text-[#211f2e] text-[15px]">Can You Add AI-Powered Effects?</h3>
           <p class="mt-1 text-sm text-[#8b87a0]">AI photo booth software layers on themed styles and portraits in real time.</p>
@@ -121,7 +118,7 @@
   </section>
 
   <!-- SECTION 3: How Does It Work -->
-  <section aria-labelledby="how-it-works-heading" class="px-6 sm:px-10 py-20 lg:py-28 bg-[#f2f0f5]">
+  <section aria-labelledby="how-it-works-heading" class="px-8 sm:px-12 py-20 lg:py-28 bg-[#f2f0f5]">
     <div class="max-w-6xl mx-auto">
       <h2 id="how-it-works-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-3xl mx-auto">
         How Does Photo Booth Software Turn a Capture Into an Experience?
@@ -161,10 +158,10 @@
   </section>
 
   <!-- SECTION 4: Which Features Can You Control -->
-  <section aria-labelledby="control-heading" class="px-6 sm:px-10 py-20 lg:py-28">
+  <section aria-labelledby="control-heading" class="px-8 sm:px-12 py-20 lg:py-28">
     <div class="max-w-6xl mx-auto grid lg:grid-cols-[1.4fr_1fr] gap-12 items-center">
       <div class="relative rounded-2xl overflow-hidden shadow-lg ring-1 ring-gray-100 bg-[#1c1c22]">
-        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=900&h=620&fit=crop" alt="Annotated photo booth software interface with control hotspots" class="w-full h-full object-cover opacity-90">
+        <div class="w-full aspect-[4/3] bg-[#26232f] border-2 border-dashed border-white/20 flex flex-col items-center justify-center gap-1 text-white/40" role="img" aria-label="Photo needed"><svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.174C3.023 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.773-1.994-1.802-2.169a47.87 47.87 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"/><path d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/></svg><span class="text-xs font-medium">Add screenshot</span></div>
         <span class="hotspot absolute top-[14%] left-[18%] w-3.5 h-3.5 rounded-full bg-[#6C4EF5] ring-2 ring-white shadow"></span>
         <span class="hotspot absolute top-[30%] left-[62%] w-3.5 h-3.5 rounded-full bg-[#6C4EF5] ring-2 ring-white shadow"></span>
         <span class="hotspot absolute top-[52%] left-[30%] w-3.5 h-3.5 rounded-full bg-[#6C4EF5] ring-2 ring-white shadow"></span>
@@ -194,7 +191,7 @@
   </section>
 
   <!-- SECTION 5: What Can You Create -->
-  <section aria-labelledby="create-heading" class="px-6 sm:px-10 py-20 lg:py-28 bg-[#f2f0f5]">
+  <section aria-labelledby="create-heading" class="px-8 sm:px-12 py-20 lg:py-28 bg-[#f2f0f5]">
     <div class="max-w-6xl mx-auto">
       <h2 id="create-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
         What Can You Create With Photo Booth Software?
@@ -202,33 +199,27 @@
 
       <div class="carousel-track mt-14">
         <article class="media-card shrink-0 w-64 sm:w-72 bg-white rounded-2xl ring-1 ring-gray-100 overflow-hidden">
-          <div class="aspect-[4/5] overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=500&h=650&fit=crop" alt="Branded photo template with event logo overlay" class="w-full h-full object-cover">
-          </div>
+          <div class="aspect-[4/5] overflow-hidden bg-[#f4f3f8] border-2 border-dashed border-gray-300 flex flex-col items-center justify-center gap-1 text-[#b3aec2]" role="img" aria-label="Photo needed"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.174C3.023 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.773-1.994-1.802-2.169a47.87 47.87 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"/><path d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/></svg><span class="text-[10px] font-medium">Add photo</span></div>
           <h3 class="p-4 font-semibold text-[#211f2e] text-[15px]">Could You Create Branded Photo Experiences?</h3>
         </article>
         <article class="media-card shrink-0 w-64 sm:w-72 bg-white rounded-2xl ring-1 ring-gray-100 overflow-hidden">
           <div class="aspect-[4/5] overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=500&h=650&fit=crop" alt="Boomerang animation preview frame" class="w-full h-full object-cover">
+            <img src="images/hero-instant-photo-2.webp" alt="AI photo booth kiosk screen displaying a captured photo" class="w-full h-full object-cover">
           </div>
           <h3 class="p-4 font-semibold text-[#211f2e] text-[15px]">Could You Create GIFs and Boomerangs?</h3>
         </article>
         <article class="media-card shrink-0 w-64 sm:w-72 bg-white rounded-2xl ring-1 ring-gray-100 overflow-hidden">
           <div class="aspect-[4/5] overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=500&h=650&fit=crop" alt="AI-generated themed photo experience" class="w-full h-full object-cover">
+            <img src="images/booth-ai-portrait.webp" alt="AI-generated themed photo experience" class="w-full h-full object-cover">
           </div>
           <h3 class="p-4 font-semibold text-[#211f2e] text-[15px]">Could You Create AI Photo Experiences?</h3>
         </article>
         <article class="media-card shrink-0 w-64 sm:w-72 bg-white rounded-2xl ring-1 ring-gray-100 overflow-hidden">
-          <div class="aspect-[4/5] overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1496024840928-4c417adf211d?w=500&h=650&fit=crop" alt="Green screen before and after composite" class="w-full h-full object-cover">
-          </div>
+          <div class="aspect-[4/5] overflow-hidden bg-[#f4f3f8] border-2 border-dashed border-gray-300 flex flex-col items-center justify-center gap-1 text-[#b3aec2]" role="img" aria-label="Photo needed"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.174C3.023 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.773-1.994-1.802-2.169a47.87 47.87 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"/><path d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/></svg><span class="text-[10px] font-medium">Add photo</span></div>
           <h3 class="p-4 font-semibold text-[#211f2e] text-[15px]">Could You Create Green Screen Experiences?</h3>
         </article>
         <article class="media-card shrink-0 w-64 sm:w-72 bg-white rounded-2xl ring-1 ring-gray-100 overflow-hidden">
-          <div class="aspect-[4/5] overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=650&fit=crop" alt="Digital gallery screen listing shared event photos" class="w-full h-full object-cover">
-          </div>
+          <div class="aspect-[4/5] overflow-hidden bg-[#f4f3f8] border-2 border-dashed border-gray-300 flex flex-col items-center justify-center gap-1 text-[#b3aec2]" role="img" aria-label="Photo needed"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.174C3.023 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.773-1.994-1.802-2.169a47.87 47.87 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"/><path d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/></svg><span class="text-[10px] font-medium">Add photo</span></div>
           <h3 class="p-4 font-semibold text-[#211f2e] text-[15px]">Could You Create Digital Galleries?</h3>
         </article>
       </div>
@@ -236,16 +227,16 @@
   </section>
 
   <!-- SECTION 6: Device Compatibility -->
-  <section id="devices-heading-wrap" aria-labelledby="devices-heading" class="px-6 sm:px-10 py-16 lg:py-24">
+  <section id="devices-heading-wrap" aria-labelledby="devices-heading" class="px-8 sm:px-12 py-16 lg:py-24">
     <div class="max-w-5xl mx-auto">
       <h2 id="devices-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
         Which Devices and Photo Booth Setups Can the Software Work With?
       </h2>
 
-      <table class="w-full mt-12 border-collapse overflow-hidden rounded-2xl">
+      <table class="w-full mt-12 border-collapse overflow-hidden rounded-2xl text-center">
         <caption class="sr-only">Photo booth software compatibility by setup type</caption>
         <thead>
-          <tr class="text-left text-sm text-[#8b87a0]">
+          <tr class="text-center text-sm text-[#8b87a0]">
             <th scope="col" class="py-3 px-4 font-medium">Setup</th>
             <th scope="col" class="py-3 px-4 font-medium">Compatibility</th>
           </tr>
@@ -280,7 +271,7 @@
   </section>
 
   <!-- SECTION 7: Use Your Own Equipment -->
-  <section aria-labelledby="own-equipment-heading" class="px-6 sm:px-10 py-20 lg:py-28 bg-[#f2f0f5]">
+  <section aria-labelledby="own-equipment-heading" class="px-8 sm:px-12 py-20 lg:py-28 bg-[#f2f0f5]">
     <div class="max-w-2xl mx-auto text-center">
       <h2 id="own-equipment-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e]">
         Can You Use Photo Booth Software With Equipment You Already Own?
@@ -304,7 +295,7 @@
   </section>
 
   <!-- SECTION 8: Add Software to a New Booth -->
-  <section aria-labelledby="new-booth-heading" class="px-6 sm:px-10 py-16 lg:py-24">
+  <section aria-labelledby="new-booth-heading" class="px-8 sm:px-12 py-16 lg:py-24">
     <div class="max-w-3xl mx-auto text-center">
       <h2 id="new-booth-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e]">
         Can You Add Software When You Buy a New Photo Booth?
@@ -328,7 +319,7 @@
   </section>
 
   <!-- SECTION 9: Business Workflow -->
-  <section aria-labelledby="business-heading" class="px-6 sm:px-10 py-20 lg:py-28 bg-[#f2f0f5]">
+  <section aria-labelledby="business-heading" class="px-8 sm:px-12 py-20 lg:py-28 bg-[#f2f0f5]">
     <div class="max-w-3xl mx-auto">
       <h2 id="business-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center">
         How Can Photo Booth Software Help You Run More Event Experiences?
@@ -369,7 +360,7 @@
   </section>
 
   <!-- SECTION 10: Access -->
-  <section id="access-heading-wrap" aria-labelledby="access-heading" class="px-6 sm:px-10 py-16 lg:py-24">
+  <section id="access-heading-wrap" aria-labelledby="access-heading" class="px-8 sm:px-12 py-16 lg:py-24">
     <div class="max-w-3xl mx-auto rounded-2xl bg-[#b8d6f5]/25 p-8 sm:p-12 text-center">
       <h2 id="access-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e]">
         How Can You Get Access to the Photo Booth Software?
@@ -391,7 +382,7 @@
   </section>
 
   <!-- SECTION 11: Why Choose Us -->
-  <section aria-labelledby="why-choose-heading" class="px-6 sm:px-10 py-20 lg:py-28">
+  <section aria-labelledby="why-choose-heading" class="px-8 sm:px-12 py-20 lg:py-28">
     <div class="max-w-6xl mx-auto">
       <h2 id="why-choose-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
         Why Choose Our Photo Booth Software?
@@ -427,7 +418,7 @@
   </section>
 
   <!-- SECTION 12: FAQ -->
-  <section aria-labelledby="faq-heading" class="px-6 sm:px-10 py-20 lg:py-28 bg-[#f2f0f5]">
+  <section aria-labelledby="faq-heading" class="px-8 sm:px-12 py-20 lg:py-28 bg-[#f2f0f5]">
     <div class="max-w-3xl mx-auto">
       <h2 id="faq-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center">
         What Do People Ask About Photo Booth Software?

@@ -14,7 +14,7 @@
 <div id="site-header"></div>
 
 <!-- HERO -->
-<div class="w-full bg-white px-6 sm:px-10 py-10 lg:py-6 relative overflow-hidden flex items-center lg:[min-height:calc(100vh_-_var(--header-h))]">
+<div class="w-full bg-white px-8 sm:px-12 py-10 lg:py-6 relative overflow-hidden flex items-center lg:[min-height:calc(100vh_-_var(--header-h))]">
 
   <svg class="absolute left-0 top-0 h-full w-1/2 text-[#efeef8] pointer-events-none" viewBox="0 0 400 600" fill="none">
     <path d="M-20 500 C 80 450, 60 350, 150 320 S 250 250, 200 150 S 100 50, 180 -20" stroke="currentColor" stroke-width="2"/>
@@ -25,11 +25,11 @@
 
   <div class="relative z-10 grid lg:grid-cols-2 gap-10 items-center w-full">
 
-    <div class="max-w-lg">
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#211f2e] leading-[1.05] tracking-tight">
-        Smile <span class="inline-block align-middle text-3xl sm:text-4xl">📸</span>
-        <br>Without a
-        <br>Glitch <span class="inline-block align-middle text-3xl sm:text-4xl">✨</span>
+    <div class="max-w-xl">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight">
+        <span class="bg-gradient-to-r from-[#6C4EF5] to-[#211f2e] bg-clip-text text-transparent">Photobooth</span>
+        <br><span class="bg-gradient-to-r from-[#6C4EF5] to-[#211f2e] bg-clip-text text-transparent">Manufacturing</span>
+        <br><span class="bg-gradient-to-r from-[#6C4EF5] to-[#211f2e] bg-clip-text text-transparent">Without Limits</span>
       </h1>
 
       <p class="mt-6 text-[#8b87a0] text-[15px] leading-relaxed max-w-sm">
@@ -50,7 +50,7 @@
         <!-- Instant photo 1 -->
         <div class="photo-tile polaroid w-[clamp(84px,26vw,210px)] sm:w-[245px] shadow-xl rotate-[-2deg]">
           <div class="rounded-sm overflow-hidden aspect-[4/5] bg-black">
-            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600&h=750&fit=crop" alt="Friends celebrating at sunset, printed as an instant photo booth photo" class="w-full h-full object-cover">
+            <img src="images/hero-instant-photo-1.webp" alt="Friends celebrating at sunset, printed as an instant photo booth photo" class="w-full h-full object-cover">
           </div>
           <p class="polaroid-caption mt-2 text-center text-[0.9rem] sm:text-[1.25rem]">Weekend Weddings 🎉</p>
         </div>
@@ -58,7 +58,7 @@
         <!-- Instant photo 2 -->
         <div class="photo-tile polaroid w-[clamp(92px,29vw,230px)] sm:w-[265px] shadow-xl rotate-[1deg] z-10">
           <div class="rounded-sm overflow-hidden aspect-[4/5] bg-black">
-            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&h=750&fit=crop" alt="Crowd cheering at a live event, printed as an instant photo booth photo" class="w-full h-full object-cover">
+            <img src="images/hero-instant-photo-2.webp" alt="AI photo booth kiosk printing an instant photo at an event" class="w-full h-full object-cover object-[75%_center]">
           </div>
           <p class="polaroid-caption mt-2 text-center text-[0.9rem] sm:text-[1.25rem]">Instant Prints! 📸</p>
         </div>
@@ -66,7 +66,7 @@
         <!-- Instant photo 3 -->
         <div class="photo-tile polaroid w-[clamp(84px,26vw,210px)] sm:w-[245px] shadow-xl rotate-[2deg]">
           <div class="rounded-sm overflow-hidden aspect-[4/5] bg-black">
-            <img src="https://images.unsplash.com/photo-1496024840928-4c417adf211d?w=600&h=750&fit=crop" alt="Guests covered in colored powder at a party, printed as an instant photo booth photo" class="w-full h-full object-cover">
+            <img src="images/booth-guests-printing.webp" alt="Couple selecting their favorite shot on the booth touchscreen as a friend photographs the print" class="w-full h-full object-cover">
           </div>
           <p class="polaroid-caption mt-2 text-center text-[0.9rem] sm:text-[1.25rem]">Yay, so fun! ✨</p>
         </div>
@@ -116,7 +116,7 @@
 <main>
 
   <!-- SECTION: What Is a Photo Booth -->
-  <section aria-labelledby="what-is-heading" class="px-6 sm:px-10 py-20 lg:py-24">
+  <section aria-labelledby="what-is-heading" class="px-8 sm:px-12 py-20 lg:py-24">
     <div class="max-w-2xl mx-auto text-center">
       <h2 id="what-is-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e]">
         What Is a Photo Booth?
@@ -146,7 +146,7 @@
   </section>
 
   <!-- SECTION 2: What Are You Looking For -->
-  <section aria-labelledby="looking-for-heading" class="px-6 sm:px-10 py-24 lg:py-32">
+  <section aria-labelledby="looking-for-heading" class="px-8 sm:px-12 py-24 lg:py-32">
     <div class="max-w-6xl mx-auto">
       <h2 id="looking-for-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
         What Are You Looking for Today?
@@ -155,7 +155,7 @@
       <div class="mt-14 grid md:grid-cols-3 gap-8">
 
         <div class="choice-card rounded-2xl ring-4 ring-white shadow-lg overflow-hidden bg-[#c8b8f5]/20 flex flex-col">
-          <div class="h-48 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=500&h=350&fit=crop&crop=faces')" role="img" aria-label="Photographer capturing guests laughing at a wedding photo booth"></div>
+          <div class="h-48 bg-cover bg-center" style="background-image:url('images/hero-instant-photo-1.webp')" role="img" aria-label="Lineup of photo booth models staged at an elegant venue"></div>
           <div class="p-6 flex flex-col flex-1">
             <h3 class="text-xl font-semibold text-[#3a3550]">Do You Need a Photo Booth for an Event?</h3>
             <p class="mt-3 text-[15px] text-[#8b87a0] leading-relaxed">
@@ -166,7 +166,7 @@
         </div>
 
         <div class="choice-card rounded-2xl ring-4 ring-white shadow-lg overflow-hidden bg-[#f5d9b8]/20 flex flex-col">
-          <div class="h-48 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=500&h=350&fit=crop&crop=faces')" role="img" aria-label="Compact photo booth machine boxed and ready for purchase"></div>
+          <div class="h-48 bg-cover bg-center" style="background-image:url('images/booth-owner-portrait.webp')" role="img" aria-label="Confident booth owner standing beside his photo booth and props table"></div>
           <div class="p-6 flex flex-col flex-1">
             <h3 class="text-xl font-semibold text-[#3a3550]">Do You Want to Own a Photo Booth?</h3>
             <p class="mt-3 text-[15px] text-[#8b87a0] leading-relaxed">
@@ -177,7 +177,7 @@
         </div>
 
         <div id="software-heading" class="choice-card rounded-2xl ring-4 ring-white shadow-lg overflow-hidden bg-[#b8d6f5]/20 flex flex-col">
-          <div class="h-48 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=350&fit=crop&crop=entropy')" role="img" aria-label="Photo booth software touchscreen showing filter and print options"></div>
+          <div class="h-48 bg-cover bg-center" style="background-image:url('images/booth-digital-compact.webp')" role="img" aria-label="Enclosed digital photo booth compatible with the software"></div>
           <div class="p-6 flex flex-col flex-1">
             <h3 class="text-xl font-semibold text-[#3a3550]">Do You Need Software for Your Booth?</h3>
             <p class="mt-3 text-[15px] text-[#8b87a0] leading-relaxed">
@@ -192,7 +192,7 @@
   </section>
 
   <!-- SECTION 3: Which Experience Fits You -->
-  <section aria-labelledby="experience-heading" class="px-6 sm:px-10 py-20 lg:py-28 bg-[#f2f0f5]">
+  <section aria-labelledby="experience-heading" class="px-8 sm:px-12 py-20 lg:py-28 bg-[#f2f0f5]">
     <div class="max-w-6xl mx-auto">
       <h2 id="experience-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
         Which Photo Booth Experience Fits Your Event or Business?
@@ -201,42 +201,42 @@
       <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
 
         <div class="gallery-card relative rounded-2xl overflow-hidden aspect-[4/5] rotate-[-2deg] shadow-md">
-          <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=500&h=650&fit=crop" alt="360-degree platform photo booth spinning camera arm at an event" class="w-full h-full object-cover">
+          <img src="images/booth-360-branded.webp" alt="360-degree platform photo booth spinning camera arm at an event" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
           <span class="absolute top-3 left-3 bg-[#1c1c22] text-white text-xs font-semibold px-3 py-1.5 rounded-full">360°</span>
           <h3 class="absolute bottom-4 left-4 right-4 text-white font-semibold text-lg">Would a 360 Photo Booth Create More Shareable Moments?</h3>
         </div>
 
         <div class="gallery-card relative rounded-2xl overflow-hidden aspect-[4/5] rotate-[2deg] shadow-md">
-          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&h=650&fit=crop" alt="Guests posing in front of a mirror photo booth with touchscreen" class="w-full h-full object-cover">
+          <img src="images/booth-selfie-mirror.webp" alt="Guests posing in front of a mirror photo booth with touchscreen" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
           <span class="absolute top-3 left-3 bg-[#1c1c22] text-white text-xs font-semibold px-3 py-1.5 rounded-full">Interactive</span>
           <h3 class="absolute bottom-4 left-4 right-4 text-white font-semibold text-lg">Would a Mirror Booth Make Your Event More Interactive?</h3>
         </div>
 
         <div class="gallery-card relative rounded-2xl overflow-hidden aspect-[4/5] rotate-[-1deg] shadow-md">
-          <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=500&h=650&fit=crop" alt="DSLR camera set up on a tripod for a premium photo booth" class="w-full h-full object-cover">
+          <img src="images/booth-dslr-deluxe.webp" alt="DSLR camera set up on a tripod for a premium photo booth" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
           <span class="absolute top-3 left-3 bg-[#1c1c22] text-white text-xs font-semibold px-3 py-1.5 rounded-full">Premium</span>
           <h3 class="absolute bottom-4 left-4 right-4 text-white font-semibold text-lg">Would a DSLR Booth Deliver Premium Photos?</h3>
         </div>
 
         <div class="gallery-card relative rounded-2xl overflow-hidden aspect-[4/5] rotate-[2deg] shadow-md">
-          <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500&h=650&fit=crop" alt="Guest tapping a digital photo booth touchscreen kiosk" class="w-full h-full object-cover">
+          <img src="images/booth-digital-compact.webp" alt="Blue enclosed digital photo booth with branded top sign" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
           <span class="absolute top-3 left-3 bg-[#1c1c22] text-white text-xs font-semibold px-3 py-1.5 rounded-full">Fast setup</span>
           <h3 class="absolute bottom-4 left-4 right-4 text-white font-semibold text-lg">Would a Digital Booth Keep Things Simple and Fast?</h3>
         </div>
 
         <div class="gallery-card relative rounded-2xl overflow-hidden aspect-[4/5] rotate-[-2deg] shadow-md">
-          <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=500&h=650&fit=crop" alt="Compact portable photo booth carried in a travel case" class="w-full h-full object-cover">
+          <img src="images/booth-setup-equipment.webp" alt="Operator setting up a portable photo booth with roller cases at a venue" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
           <span class="absolute top-3 left-3 bg-[#1c1c22] text-white text-xs font-semibold px-3 py-1.5 rounded-full">Portable</span>
           <h3 class="absolute bottom-4 left-4 right-4 text-white font-semibold text-lg">Would a Portable Booth Make Setup Easier?</h3>
         </div>
 
         <div class="gallery-card relative rounded-2xl overflow-hidden aspect-[4/5] rotate-[1deg] shadow-md">
-          <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=500&h=650&fit=crop" alt="Guests interacting with an AI photo booth generating a themed portrait" class="w-full h-full object-cover">
+          <img src="images/booth-ai-portrait.webp" alt="Guests interacting with an AI photo booth generating a themed portrait" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
           <span class="absolute top-3 left-3 bg-[#1c1c22] text-white text-xs font-semibold px-3 py-1.5 rounded-full">AI-powered</span>
           <h3 class="absolute bottom-4 left-4 right-4 text-white font-semibold text-lg">Would an AI Booth Create Something More Interactive?</h3>
@@ -247,7 +247,7 @@
   </section>
 
   <!-- SECTION 4: How Can You Get Started -->
-  <section aria-labelledby="get-started-heading" class="px-6 sm:px-10 py-16 lg:py-24">
+  <section aria-labelledby="get-started-heading" class="px-8 sm:px-12 py-16 lg:py-24">
     <div class="max-w-6xl mx-auto">
       <h2 id="get-started-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
         How Can You Get Started With a Photo Booth?
@@ -316,11 +316,11 @@
   </section>
 
   <!-- SECTION 5: Customize -->
-  <section aria-labelledby="customize-heading" class="px-6 sm:px-10 py-20 lg:py-28 bg-[#f2f0f5]">
+  <section aria-labelledby="customize-heading" class="px-8 sm:px-12 py-20 lg:py-28 bg-[#f2f0f5]">
     <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
       <div>
         <div class="rounded-2xl ring-4 ring-white shadow-lg overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&h=480&fit=crop" alt="Photo booth hardware mockup being configured with screen and camera options" class="w-full h-full object-cover">
+          <img src="images/booth-dslr-deluxe.webp" alt="Wooden DSLR photo booth with a screen and camera lens" class="w-full h-full object-cover">
         </div>
       </div>
       <div>
@@ -397,7 +397,7 @@
   </section>
 
   <!-- SECTION 6: Features -->
-  <section aria-labelledby="features-heading" class="px-6 sm:px-10 py-20 lg:py-28">
+  <section aria-labelledby="features-heading" class="px-8 sm:px-12 py-20 lg:py-28">
     <div class="max-w-6xl mx-auto">
       <h2 id="features-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
         Which Photo Booth Features Matter Most for Your Setup?
@@ -454,7 +454,7 @@
   </section>
 
   <!-- SECTION 7: Software -->
-  <section aria-labelledby="software-add-heading" class="px-6 sm:px-10 py-20 lg:py-28 bg-[#f2f0f5]">
+  <section aria-labelledby="software-add-heading" class="px-8 sm:px-12 py-20 lg:py-28 bg-[#f2f0f5]">
     <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
       <div>
         <h2 id="software-add-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e]">
@@ -476,13 +476,13 @@
         <a href="software.html" class="mt-6 inline-block text-[#6C4EF5] font-semibold">Explore Software ↗</a>
       </div>
       <div class="rounded-2xl ring-4 ring-white shadow-lg overflow-hidden bg-[#b8d6f5]/30 p-4">
-        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=440&fit=crop" alt="Photo booth software touchscreen showing AI filter and instant print options" class="w-full h-full object-cover rounded-xl">
+        <div class="w-full aspect-square rounded-xl bg-white/60 border-2 border-dashed border-white flex flex-col items-center justify-center gap-1 text-[#7c86a8]" role="img" aria-label="Photo needed"><svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.174C3.023 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.773-1.994-1.802-2.169a47.87 47.87 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"/><path d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/></svg><span class="text-xs font-medium">Add photo</span></div>
       </div>
     </div>
   </section>
 
   <!-- SECTION 8: Decision Matrix -->
-  <section aria-labelledby="solution-heading" class="px-6 sm:px-10 py-16 lg:py-24">
+  <section aria-labelledby="solution-heading" class="px-8 sm:px-12 py-16 lg:py-24">
     <div class="max-w-4xl mx-auto">
       <h2 id="solution-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center">
         Which Photo Booth Solution Is Right for Your Goal?
@@ -510,7 +510,7 @@
   </section>
 
   <!-- SECTION 9: Cost -->
-  <section id="cost-heading-wrap" aria-labelledby="cost-heading" class="px-6 sm:px-10 py-16 lg:py-24 bg-[#f2f0f5]">
+  <section id="cost-heading-wrap" aria-labelledby="cost-heading" class="px-8 sm:px-12 py-16 lg:py-24 bg-[#f2f0f5]">
     <div class="max-w-6xl mx-auto">
       <h2 id="cost-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center">
         What Do Photo Booths Cost?
@@ -540,7 +540,7 @@
   </section>
 
   <!-- SECTION 10: Why Choose Us -->
-  <section aria-labelledby="why-choose-heading" class="px-6 sm:px-10 py-20 lg:py-28">
+  <section aria-labelledby="why-choose-heading" class="px-8 sm:px-12 py-20 lg:py-28">
     <div class="max-w-6xl mx-auto">
       <h2 id="why-choose-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
         Why Choose Our Photo Booth Solutions?
@@ -580,7 +580,7 @@
   </section>
 
   <!-- SECTION 11: Testimonials -->
-  <section aria-labelledby="testimonials-heading" class="px-6 sm:px-10 py-20 lg:py-28 bg-[#f2f0f5]">
+  <section aria-labelledby="testimonials-heading" class="px-8 sm:px-12 py-20 lg:py-28 bg-[#f2f0f5]">
     <div class="max-w-6xl mx-auto">
       <h2 id="testimonials-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center max-w-2xl mx-auto">
         What Do Customers Say About Their Experience?
@@ -590,7 +590,7 @@
         <article class="bg-white rounded-2xl border border-gray-100 p-6 border-l-4 border-l-[#6C4EF5]">
           <p class="text-[15px] text-[#3a3550] leading-relaxed">"Our wedding photo booth line never stopped — the prints were a bigger hit than the dance floor."</p>
           <div class="mt-4 flex items-center gap-3">
-            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop&crop=faces" alt="" class="w-10 h-10 rounded-full">
+            <img src="images/photo-booth-guest-portrait-1.webp" alt="" class="w-10 h-10 rounded-full">
             <div>
               <p class="text-sm font-semibold text-[#211f2e]">Priya N.</p>
               <p class="text-xs text-[#8b87a0]">Rent</p>
@@ -600,7 +600,7 @@
         <article class="bg-white rounded-2xl border border-gray-100 p-6 border-l-4 border-l-[#b5822a]">
           <p class="text-[15px] text-[#3a3550] leading-relaxed">"Bought our first booth to start a side business — it paid for itself within two months of weekend bookings."</p>
           <div class="mt-4 flex items-center gap-3">
-            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=80&h=80&fit=crop&crop=faces" alt="" class="w-10 h-10 rounded-full">
+            <img src="images/photo-booth-guest-portrait-2.webp" alt="" class="w-10 h-10 rounded-full">
             <div>
               <p class="text-sm font-semibold text-[#211f2e]">Marcus T.</p>
               <p class="text-xs text-[#8b87a0]">Buy</p>
@@ -610,7 +610,7 @@
         <article class="bg-white rounded-2xl border border-gray-100 p-6 border-l-4 border-l-[#2b6cb0]">
           <p class="text-[15px] text-[#3a3550] leading-relaxed">"We already had a DSLR rig — the software gave us prints and AI filters without buying new hardware."</p>
           <div class="mt-4 flex items-center gap-3">
-            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=80&h=80&fit=crop&crop=faces" alt="" class="w-10 h-10 rounded-full">
+            <div class="w-10 h-10 rounded-full bg-[#f4f3f8] border border-dashed border-gray-300 flex items-center justify-center text-[10px] font-semibold text-[#b3aec2]" role="img" aria-label="Photo needed">DK</div>
             <div>
               <p class="text-sm font-semibold text-[#211f2e]">Dana K.</p>
               <p class="text-xs text-[#8b87a0]">Software</p>
@@ -622,7 +622,7 @@
   </section>
 
   <!-- SECTION 12: FAQ -->
-  <section aria-labelledby="faq-heading" class="px-6 sm:px-10 py-20 lg:py-28">
+  <section aria-labelledby="faq-heading" class="px-8 sm:px-12 py-20 lg:py-28">
     <div class="max-w-3xl mx-auto">
       <h2 id="faq-heading" class="text-3xl sm:text-4xl font-extrabold text-[#211f2e] text-center">
         What Questions Do Customers Ask Before Choosing a Photo Booth?
