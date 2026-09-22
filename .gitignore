@@ -1,1 +1,3 @@
 .playwright-mcp/
+api/secrets.php
+api/data/
